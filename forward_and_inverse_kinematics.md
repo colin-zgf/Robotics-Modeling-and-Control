@@ -77,6 +77,6 @@ $$\begin{align}\cos(\theta_{2}) = \frac{r^2 + s^2 - a^2_{1} - a^2_{2}}{2a_{1}a_{
 
 $$\begin{align}\theta_{2} =atan2(D, \pm \sqrt{1 - D^2})\end{align}$$
 
-The two solutions for $theta_{2}$ correspond to the elbow-up position and elbow-down position, respectively. Similarly, $theta_{1}$ can be calculated through the same way.
+The two solutions for $\theta_{2}$ correspond to the elbow-up position and elbow-down position, respectively. Similarly, $\theta_{1}$ can be calculated through the same way.
 
 2. Inverse Orientation. The inverse position solution gives the first three joint variables corresponding to a given orientation with respect to the frame $o_{3}x_{3}y_{3}z_{3}$. For a spherical wrist, this can be interpreted as the problem of finding a set of Euler angles corresponding to a given rotation matrix.
