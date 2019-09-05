@@ -16,13 +16,15 @@ $$A_{i} = \begin{pmatrix}\cos(\theta_{i}) & -\sin(\theta_{i})\cos(\alpha_{i}) & 
 0 & sin(\alpha_{i}) & cos(\alpha_{i}) & d_{i} \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
 
-where $\theta_{i}$, $d_{i}$, $a_{i}$, and $\alpha_{i}$ are **joint angle**, **link offset**, **link length**, and **link twist**. It turns out that $a_{i}$ and $\alpha_{i}$ are constant once given the robot configurations. $\theta_{i}$ works for a revolute joint and $d_{i}$ works for a prismatic joint. The 2-link robots below shows how those four terms are calculated.
+where  $a_{i}$, and $\alpha_{i}$, $d_{i}$, $\theta_{i}$, are **link length**, **link twist**, **link offset**, and **joint angle**. It turns out that $a_{i}$ and $\alpha_{i}$ are constant once given the robot configurations. $\theta_{i}$ works for a revolute joint and $d_{i}$ works for a prismatic joint. 
 
 ![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/2-link-robots.png '2 link')
 
-First Header | Second Header
--------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+The DH table for 2-Link Planar Mnipulator above is shownd in the table below.
+
+Link | $a_{i}$ | $\alpha_{i}$ | $d_{i}$ | \theta_{i}
+-----| --------|--------------|---------|-----------
+1 | $a_{1}$ | $\alpha_{1}$ | $d_{1}$ | \theta_{1}
+2 | $a_{2}$ | $\alpha_{2}$ | $d_{2}$ | \theta_{2}
 
 
