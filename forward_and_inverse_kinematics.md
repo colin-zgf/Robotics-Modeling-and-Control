@@ -24,7 +24,7 @@ The DH table for 2-Link Planar Mnipulator above is shownd in the table below.
 
 Link | $a_{i}$ | $\alpha_{i}$ | $d_{i}$ | \theta_{i}
 -----| --------|--------------|---------|-----------
-1 | $a_{1}$ | $\alpha_{1}$ | $d_{1}$ | \theta_{1}
-2 | $a_{2}$ | $\alpha_{2}$ | $d_{2}$ | \theta_{2}
+1 | $a_{1}$ | $\alpha_{1}$ | $d_{1}$ | $\theta_{1}$
+2 | $a_{2}$ | $\alpha_{2}$ | $d_{2}$ | $\theta_{2}$
 
 
