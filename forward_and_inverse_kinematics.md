@@ -41,3 +41,14 @@ $$A_{1} = \begin{pmatrix}\cos(\theta_{1}) & -\sin(\theta_{1}) & 0 & a_{1}\cos(\t
 0 & 0 & 1 & 0 \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
 
+$$A_{2} = \begin{pmatrix}\cos(\theta_{2}) & -\sin(\theta_{2}) & 0 & a_{2}\cos(\theta_{2}) \\\ 
+\sin(\theta_{2}) & \cos(\theta_{2}) & 0 & a_{2}\sin(\theta_{2}) \\\ 
+0 & 0 & 1 & 0 \\\ 
+0 & 0 & 0 & 1\end{pmatrix}$$
+
+Thus, the product, or the **transformation matrix**, is:
+
+$$T^0_{2} = A_{1}A_{2} = \begin{pmatrix}\cos(\theta_{1} + \theta_{2}) & -\sin(\theta_{1} + theta_{2}) & 0 & a_{1}\cos(\theta_{1}) + a_{2}\cos(\theta_{1} + \theta_{2}) \\\ 
+\sin(\theta_{1} + \theta_{2}) & \cos(\theta_{1} + \theta_{2}) & 0 & a_{1}\sin(\theta_{1}) + a_{2}\sin(\theta_{1} + \theta_{2}) \\\ 
+0 & 0 & 1 & 0 \\\ 
+0 & 0 & 0 & 1\end{pmatrix}$$
