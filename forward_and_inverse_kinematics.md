@@ -21,11 +21,11 @@ Content in the first column | Content in the second column
 $\theta$
 $\alpha$
 $\alpha_{1}$
+
+$$\mathbf{X} = \left[\begin{array}
+{rrr}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{array}\right]
 $$
-\begin{equation}
-  \begin{bmatrix}
-    1 & 2 \\
-    3 & 4 
-  \end{bmatrix}
-  \label{eq:aeqn}
-\end{equation}
