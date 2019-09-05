@@ -34,4 +34,10 @@ Link | $a_{i}$ | $\alpha_{i}$ | $d_{i}$ | $\theta_{i}$
 1 | $a_{1}$ | 0 | 0 | $\theta^*_{1}$
 2 | $a_{2}$ | 0 | 0 | $\theta^*_{2}$
 
+Based on the parameter in the table above, the corresponding homogenous transformations are:
+
+$$A_{1} = \begin{pmatrix}\cos(\theta_{1}) & -\sin(\theta_{1}) & 0 & a_{1}\cos(\theta_{1}) \\\ 
+\sin(\theta_{1}) & \cos(\theta_{1}) & 0 & a_{1}\sin(\theta_{1}) \\\ 
+0 & 0 & 1 & 0 \\\ 
+0 & 0 & 0 & 1\end{pmatrix}$$
 
