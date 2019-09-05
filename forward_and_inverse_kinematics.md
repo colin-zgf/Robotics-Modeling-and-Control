@@ -69,3 +69,4 @@ From the previous forward kinematics, it shows the forward kinematics problem al
 
 ### Kinematic Decouplig
 
+For the six-DOF manipulator, it is possible to decouple the inverse kinematics problem into two simpler problems: inverse position kinematics, and inverse orientation kinematics. Namely, first finding the position of the intersecton of the wrist axes, hereafter called the **wrist center**, and then finding the orientation of the wrist.
