@@ -16,6 +16,8 @@ $$A_{i} = \begin{pmatrix}\cos(\theta_{i}) & -\sin(\theta_{i})\cos(\alpha_{i}) & 
 0 & sin(\alpha_{i}) & cos(\alpha_{i}) & d_{i} \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
 
+where $$\theta_{i}$$, $$d_{i}$$, $$a_{i}$$, and $$\alpha_{i}$$ are **joint angle**, **link offset**, **link length**, and **link twist**. It turns out that $$a_{i}$$ and $$\alpha_{i}$$ are constant once given the robot configurations. $$\theta_{i}$$ works for a revolute joint and $$d_{i}$$ works for a prismatic joint. The 2-link robots below shows how those four terms are calculated.
+
 ![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/2-link-robots.png '2 link')
 
 First Header | Second Header
