@@ -13,7 +13,7 @@ $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}}
 ![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/2-link-robots.png '2 link')
 
 First Header | Second Header
------------- | -------------
+-------- | -------------
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
