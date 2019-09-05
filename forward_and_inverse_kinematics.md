@@ -22,10 +22,4 @@ $\theta$
 $\alpha$
 $\alpha_{1}$
 
-$$\mathbf{X} = \left[\begin{array}
-{rrr}
-1 & 2 & 3 \\
-4 & 5 & 6 \\
-7 & 8 & 9
-\end{array}\right]
-$$
+$\begin{matrix} a & b \\ c & d \end{matrix}$
