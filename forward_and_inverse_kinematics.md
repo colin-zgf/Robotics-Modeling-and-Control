@@ -21,7 +21,7 @@ where  $a_{i}$, and $\alpha_{i}$, $d_{i}$, $\theta_{i}$, are **link length**, **
 The physical meaning of **link length**, **link twist**, **link offset**, and **joint angle** are given below:
 
 - **link length** $a_{i}$: the distance between the axies $z_{i-1}$ and $z_{i}$, and is measured along the axis $x_{i}$;
-- **link twise** $\alpha_{i}$: the angle between the axies $z_{i-1}$ and $z_{i}$, and is measured in a plane normal to axis $x_{i}$; The positive sense for $\alpha_{i}$ is determined from $z_{i-1}$ to $z_{i}$ by the right-handed rule.
+- **link twist** $\alpha_{i}$: the angle between the axies $z_{i-1}$ and $z_{i}$, and is measured in a plane normal to axis $x_{i}$; The positive sense for $\alpha_{i}$ is determined from $z_{i-1}$ to $z_{i}$ by the right-handed rule.
 - **link offset** $d_{i}$: the perpendicular distance from the origin $o_{i-1}$ to the intersection of the $x_{i}$ axis with $z_{i-1}$ measured along the $z_{i-1}$ axis;
 - **joint angle** $\theta_{i}$: the angle between $x_{i-1}$ and $x_{i}$, and is measured in the plane normal to $z_{i-1}$.
 
@@ -53,4 +53,19 @@ $$T^0_{2} = A_{1}A_{2} = \begin{pmatrix}\cos(\theta_{1} + \theta_{2}) & -\sin(\t
 0 & 0 & 1 & 0 \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
 
-where the superscript 0 and subscript 2 of $T$ means the base coordinate and the end-effector coordinate where the coordinate of end-effector in this case is $o_{2}x_{2}y_{2}z_{2}$. One interesting thing is the last column of $T^0_{2}$ which gives the coordinate $o_{2}x_{2}y_{2}z_{2}$ expressed in the base frame $o_{0}x_{0}y_{0}z_{0}$. 
+where the superscript 0 and subscript 2 of $T$ means the base coordinate and the end-effector coordinate where the coordinate of end-effector in this case is $o_{2}x_{2}y_{2}z_{2}$. One interesting thing is the last column of $T^0_{2}$ which gives the coordinate $o_{2}x_{2}y_{2}z_{2}$ expressed in the base frame $o_{0}x_{0}y_{0}z_{0}$. And from the 2-Link Planar Mnipulator above, it is easy to verify that is the case.
+
+## Inverse Kinematics
+
+The problem of inverse kinetics is: get the required joint coordinates given the desired pose of the end-effector. Usually, the inverse kinematics problem is the real practical interest. In general the solution of inverse kinematics is not unique and for some classes of manipulator no closedform solution exists, necessitating a numerical solution.
+
+A necessary condition for a closed-form solution of a 6-axis robot is that the three wrist axes intersect at a single point. This means that motion of the wrist joints only changes the end-effector orientation, not its translation. Such a mechanism is known as a spherical wrist and almost all industrial robots have such wrists.
+
+The following presents some attempts to solve the inverse kinematics:
+
+### The General Inverse Kinematic Problem
+
+From the previous forward kinematics, it shows the forward kinematics problem always has a unique solution that can be obtained simply by evaluating the forward equations. Thus, suppose that the desired position and orientation of the final frame are given, there will be twelve equations to find the corresponding joint variables. However, it is much too difficult to solve it directly in close form which is the case for most robot arms since the inverse kinematics problem may or may not have a solution. Even if a solution exits, it may or may not be unique. Furthermore, because these forward kinematic equations are in general complicated non-linear functions of the joint variable, the solutions may be difficult to obtain even when they exits.
+
+### Kinematic Decouplig
+
