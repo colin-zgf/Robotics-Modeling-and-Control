@@ -70,3 +70,7 @@ From the previous forward kinematics, it shows the forward kinematics problem al
 ### Kinematic Decouplig
 
 For the six-DOF manipulator, it is possible to decouple the inverse kinematics problem into two simpler problems: inverse position kinematics, and inverse orientation kinematics. Namely, first finding the position of the intersecton of the wrist axes, hereafter called the **wrist center**, and then finding the orientation of the wrist.
+
+1. Inverse Position. One can solve the joint variable ($\theta_{i}$ or $d_{i}$) by projecting the manipulator onto the $x_{i-1}$-$y_{i-1}$ plane and solving a simple trigonometry problem. To illustrate the point easily, we still choose the 2-Link Manipulator as the example. Assume the projection of $o_{2}$ are $r$ and $s$ on $x_{0}$ and $y_{0}$. Then one can apply the law of cosines to obtain:
+
+$$\begin{align}\cos(\theta_{2}) = \frac{r^2 + s^2 - a^2_{1} - a^2_{2}}{2a_{1}a_{2}} := D \end{align}$$
