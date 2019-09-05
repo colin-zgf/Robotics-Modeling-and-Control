@@ -20,3 +20,4 @@ Content in the first column | Content in the second column
 
 $\theta$
 $\alpha$
+$\alpha<sub>1<sub>$
