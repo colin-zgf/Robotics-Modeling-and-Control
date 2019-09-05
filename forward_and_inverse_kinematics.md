@@ -22,12 +22,12 @@ $\theta$
 $\alpha$
 $\alpha_{1}$
 $$
-\left(\begin{array}{cc} 
+\begin{pmatrix}
 0.8944272 & 0.4472136\\
 -0.4472136 & -0.8944272
-\end{array}\right)
-\left(\begin{array}{cc} 
+\end{pmatrix}
+\begin{pmatrix}
 10 & 0\\ 
 0 & 5
-\end{array}\right)
-$$ 
+\end{pmatrix}
+$$
