@@ -22,4 +22,4 @@ $\theta$
 $\alpha$
 $\alpha_{1}$
 
-$\begin{matrix} a & b \\ c & d \end{matrix}$
+$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
