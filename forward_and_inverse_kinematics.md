@@ -53,4 +53,4 @@ $$T^0_{2} = A_{1}A_{2} = \begin{pmatrix}\cos(\theta_{1} + \theta_{2}) & -\sin(\t
 0 & 0 & 1 & 0 \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
 
-where the superscript 0 and subscript 2 of $T$ means the base coordinates and the end-effector coordinates where the coordinate of end-effector in this case is $o_{2}x_{2}y_{2}z_{2}$.
+where the superscript 0 and subscript 2 of $T$ means the base coordinate and the end-effector coordinate where the coordinate of end-effector in this case is $o_{2}x_{2}y_{2}z_{2}$. One interesting thing is the last column of $T^0_{2}$ which gives the coordinate $o_{2}x_{2}y_{2}z_{2}$ expressed in the base frame $o_{0}x_{0}y_{0}z_{0}$. 
