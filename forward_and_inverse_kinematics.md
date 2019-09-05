@@ -11,11 +11,10 @@ In this part, we will discuss the basic knowledge of forward and inverse kinemat
 
 The Devavit-Hartenberg, or DH convention, is a commonly used convention for selecting frame of reference in robotic applications. A very important homogenous transformation $A_{i}$ is defined as the product of four basic transformations: rotation about $z$ axis, translation about $z$ axis, rotation around $x$ axis, and translation around $x$ axis.
 
-$$A_{i} = \begin{pmatrix}\cos(\theta_{i}) & 2 & 3\\\ 
-4 & 5 & 6\\\ 
-7 & 8 & 9\end{pmatrix}$$
-
-$$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+$$A_{i} = \begin{pmatrix}\cos(\theta_{i}) & -\sin(\theta_{i})\cos(\alpha_{i}) & \sin(\theta_{i})\sin(\alpha_{i}) & a_{i}\cos(\theta_{i}) \\\ 
+\sin(\theta_{i}) & \cos(\theta_{i})\cos(\alpha_{i}) & -\cos(\theta_{i})\sin(\alpha_{i}) & a_{i}\sin(\theta_{i}) \\\ 
+0 & sin(\alpha_{i}) & cos(\alpha_{i}) & d_{i} \\\ 
+0 & 0 & 0 & 1\end{pmatrix}$$
 
 ![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/2-link-robots.png '2 link')
 
