@@ -48,7 +48,9 @@ $$A_{2} = \begin{pmatrix}\cos(\theta_{2}) & -\sin(\theta_{2}) & 0 & a_{2}\cos(\t
 
 Thus, the product, or the **transformation matrix**, is:
 
-$$T^0_{2} = A_{1}A_{2} = \begin{pmatrix}\cos(\theta_{1} + \theta_{2}) & -\sin(\theta_{1} + theta_{2}) & 0 & a_{1}\cos(\theta_{1}) + a_{2}\cos(\theta_{1} + \theta_{2}) \\\ 
+$$T^0_{2} = A_{1}A_{2} = \begin{pmatrix}\cos(\theta_{1} + \theta_{2}) & -\sin(\theta_{1} + \theta_{2}) & 0 & a_{1}\cos(\theta_{1}) + a_{2}\cos(\theta_{1} + \theta_{2}) \\\ 
 \sin(\theta_{1} + \theta_{2}) & \cos(\theta_{1} + \theta_{2}) & 0 & a_{1}\sin(\theta_{1}) + a_{2}\sin(\theta_{1} + \theta_{2}) \\\ 
 0 & 0 & 1 & 0 \\\ 
 0 & 0 & 0 & 1\end{pmatrix}$$
+
+where the superscript 0 and subscript 2 of $T$ means the base coordinates and the end-effector coordinates where the coordinate of end-effector in this case is $o_{2}x_{2}y_{2}z_{2}$.
