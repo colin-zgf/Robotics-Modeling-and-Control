@@ -9,4 +9,10 @@ divides out of the N-simplex height $h = s \sqrt {\frac {N + 1} {2N}}$.
 The kerel summation radius $r$ is equal to the N-simplex height $h$.
 
 $$ r = h = \sqrt{\frac {1} {2}} = \sqrt{\frac {N} {N+1}} \sqrt{\frac {N+1} {2N}} $$
+
 ![alt text](/home/guangfei/test.png)
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
