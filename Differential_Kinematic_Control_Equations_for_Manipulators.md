@@ -11,3 +11,5 @@ For arm-type robots, the axis of the tool/end-effector is associated with the $z
 And the corresponding rotation matrix is given as:
 
 $$R = \begin{pmatrix}n_{x} & o_{x} & a_{x} \\\ n_{y} & o_{y} & a_{y} \\\ n_{z} & o_{z} & a_{z}\end{pmatrix}$$
+
+## Derivation of Jacobian Matrix
