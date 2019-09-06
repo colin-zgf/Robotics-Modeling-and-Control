@@ -13,3 +13,7 @@ And the corresponding rotation matrix is given as:
 $$R = \begin{pmatrix}n_{x} & o_{x} & a_{x} \\\ n_{y} & o_{y} & a_{y} \\\ n_{z} & o_{z} & a_{z}\end{pmatrix}$$
 
 ## Derivation of Jacobian Matrix
+
+The differential change $dT$ of and transformation of $T$ can be expressed in terms of the differential change of its elements or in terms of a differential translation $d_{x}**i** + d_{y}**j** + d_{z}**k**$ and a differential rotation $\delta_{x}**i** + \delta_{y}**j** + \delta_{z}**k**$ with respect to T. The relationship between the two forms is given by:
+
+$$R = \begin{align}{pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ n_{y} & o_{y} & a_{y} & dp_{y} \\\ n_{z} & o_{z} & a_{z} & dp_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}{align}$$
