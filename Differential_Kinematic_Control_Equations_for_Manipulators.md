@@ -40,6 +40,6 @@ $$\begin{align}T_{N} = A_{1} * A_{2} * ... * A_{j-1} * A_{j} * ... * A_{N-1} * A
 
 Thus,
 
-$$\begin{align}\Delta_{TN} = (A_{N} * A_{N-1} * ... * A_{j})^(-1) * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
+$$\begin{align}\Delta_{TN} = (A_{N} * A_{N-1} * ... * A_{j})^{-1} * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
 
 
