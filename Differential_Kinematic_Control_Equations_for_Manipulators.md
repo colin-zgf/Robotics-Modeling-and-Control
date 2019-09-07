@@ -40,6 +40,9 @@ $$\begin{align}T_{N} = A_{1} * A_{2} * ... * A_{j-1} * A_{j} * ... * A_{N-1} * A
 
 Thus,
 
-$$\begin{align}\Delta_{TN} = (A_{N} * A_{N-1} * ... * A_{j})^{-1} * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
+$$\begin{align}\Delta_{TN} = (A_{j} * ... * A_{N-1} * A_{N})^{-1} * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
 
+If link $n$ follows a revolute joint then a change of joint coordinate $d\theta_{n}$ corresponds to a rotation about the $z$ axis of the
+link $n-1$ coordinate frame since we set the $z$ axis as the revolute axis by convention or
 
+$$\begin{align}\Delta_{revolute} = {pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ n_{y} & o_{y} & a_{y} & dp_{y} \\\ n_{z} & o_{z} & a_{z} & dp_{z} \\\  0 & 0 & 0 & 0\{pmatrix}\end{align}$$
