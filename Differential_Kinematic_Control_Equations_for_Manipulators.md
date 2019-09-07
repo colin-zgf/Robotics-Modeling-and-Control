@@ -18,4 +18,10 @@ The differential change $dT$ of and transformation of $T$ can be expressed in te
 
 $$\begin{align}T + dT = T * (I + \Delta_{T})\end{align}$$
 
+where
+
 $$R = \begin{pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ n_{y} & o_{y} & a_{y} & dp_{y} \\\ n_{z} & o_{z} & a_{z} & dp_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+
+and
+
+$$\Delta_{T}) = \begin{pmatrix}0 & -\delta_{z} & \delta_{y} & d_{x} \\\ \delta_{z} & 0 & -\delta_{x} & dp_{y} \\\ -\delta_{y} & \delta_{x} & 0 & d_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
