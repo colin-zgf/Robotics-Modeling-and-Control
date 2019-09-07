@@ -62,3 +62,7 @@ $$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{j} * U_{j}\end{align}$$
 and
 
 $$\Delta_{TN} = \begin{pmatrix}0 & o_{x}n_{y}-o_{y}n_{x} & a_{x}n_{y}-a_{y}n_{x} & p_{x}n_{y}-p_{y}n_{x} \\\ n_{x}o_{y} -n_{y}o_{x} & 0 & a_{x}o_{y}-a_{y}o_{x} & p_{x}o_{y}-p_{y}o_{x} \\\ n_{x}a_{y}-n_{y}a_{x} & o_{x}a_{y}-o_{y}a_{x} & 0 & p_{x}a_{y}-p_{y}a_{x} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+
+Treating $**n**$, $**o**$, and $**a**$ as vectors we can rewrite this in terms of the vector cross product:
+
+$$\Delta_{TN} = \begin{pmatrix}0 & (**o**x**n**)_{z} & (**a**x**n**)_{z} & (**p**x**n**)_{z} \\\ (**n**x**o**)_{z} & 0 & (**a**x**o**)_{z} & (**p**x**o**)_{z} \\\ (**n**x**a**)_{z} & (**o**x**a**)_{z} & 0 & (**p**x**a**)_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}d\theta_{j}$$
