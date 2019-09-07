@@ -24,4 +24,4 @@ $$R = \begin{pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ n_{y} & o_{y} & a_{y}
 
 and
 
-$$\Delta_{T}) = \begin{pmatrix}0 & -\delta_{z} & \delta_{y} & d_{x} \\\ \delta_{z} & 0 & -\delta_{x} & dp_{y} \\\ -\delta_{y} & \delta_{x} & 0 & d_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+$$\Delta_{T} = \begin{pmatrix}0 & -\delta_{z} & \delta_{y} & d_{x} \\\ \delta_{z} & 0 & -\delta_{x} & d_{y} \\\ -\delta_{y} & \delta_{x} & 0 & d_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
