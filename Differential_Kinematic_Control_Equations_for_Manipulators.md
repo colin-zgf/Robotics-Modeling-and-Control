@@ -20,7 +20,7 @@ $$\begin{align}T + dT = T * (I + \Delta_{T})\end{align}$$
 
 where
 
-$$R = \begin{pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ n_{y} & o_{y} & a_{y} & dp_{y} \\\ n_{z} & o_{z} & a_{z} & dp_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+$$dT = \begin{pmatrix}dn_{x} & do_{x} & da_{x} & dp_{x} \\\ dn_{y} & do_{y} & da_{y} & dp_{y} \\\ dn_{z} & do_{z} & da_{z} & dp_{z} \\\  0 & 0 & 0 & 0\end{pmatrix}$$
 
 and
 
@@ -53,3 +53,8 @@ $$\Delta_{revolute} = \begin{pmatrix}0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 &
 
 If we define $U_{j} = (A_{j} * A_{j+1} * ... * A_{N})$ with elements:
 
+$$U_{j} = \begin{pmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y} & p_{y} \\\ n_{z} & o_{z} & a_{z} & p_{z} \\\  0 & 0 & 0 & 1\end{pmatrix}$$
+
+Then,
+
+$$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{j} * U_{j}\end{align}$$
