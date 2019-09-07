@@ -42,7 +42,11 @@ Thus,
 
 $$\begin{align}\Delta_{TN} = (A_{j} * ... * A_{N-1} * A_{N})^{-1} * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
 
-If link $n$ follows a revolute joint then a change of joint coordinate $d\theta_{n}$ corresponds to a rotation about the $z$ axis of the
-link $n-1$ coordinate frame since we set the $z$ axis as the revolute axis by convention or
+If link $j$ follows a revolute joint then a change of joint coordinate $d\theta_{j}$ corresponds to a rotation about the $z$ axis of the
+link $j-1$ coordinate frame since we set the $z$ axis as the revolute axis by convention or:
 
 $$\Delta_{revolute} = \begin{pmatrix}0 & -d_{\theta} & 0 & 0 \\\ d_{\theta} & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+
+If the link $j$ follows a prismatic joint then the change of joint coordinate $dd_{j}$, corresponds to a translation along the $z$ axis of the link $j-1$ coordinate frame or:
+
+$$\Delta_{revolute} = \begin{pmatrix}0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & dd \\\  0 & 0 & 0 & 0\end{pmatrix}$$
