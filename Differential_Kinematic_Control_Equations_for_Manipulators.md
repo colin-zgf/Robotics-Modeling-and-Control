@@ -32,4 +32,14 @@ $$\begin{align}dT = T * \Delta_{T}\end{align}$$
 
 Assume $T_{N}$ describes the end of the manipulator where N is the number of joints. We will evaluate $\Delta_{TN}$ as a function of changes of joint coordinates, and if $dT_{N}$ is desired then we simply premultiply $\Delta_{TN}$ by $T_{N}$ to obtain $dT_{N}$. If in the case of a manipulator we were to make a change with respect to a link coordinate frame $j - 1$ of $\Delta_{j}$ we could find an equivalent change in $T_{N}$, $\Delta_{TN}$ expressed as
 
-$$\begin{align}T_{N}* \Delta_{TN} = A_{1} * A_{2} * ... * A_{j_ 1} * \Delta_{j} * A_{j} * ... * A_{N-1} * A_{N}\end{align}$$
+$$\begin{align}T_{N}* \Delta_{TN} = A_{1} * A_{2} * ... * A_{j-1} * \Delta_{j} * A_{j} * ... * A_{N-1} * A_{N}\end{align}$$
+
+Since 
+
+$$\begin{align}T_{N} = A_{1} * A_{2} * ... * A_{j-1} * A_{j} * ... * A_{N-1} * A_{N}\end{align}$$
+
+Thus,
+
+$$\Delta_{TN} = (A_{N} * A_{N-1} * ... * A_{j})^(-1) * \Delta_{j} * (A_{j} * ... * A_{N-1} * A_{N})\end{align}$$
+
+
