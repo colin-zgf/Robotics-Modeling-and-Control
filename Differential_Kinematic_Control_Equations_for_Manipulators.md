@@ -50,3 +50,6 @@ $$\Delta_{revolute} = \begin{pmatrix}0 & -d_{\theta} & 0 & 0 \\\ d_{\theta} & 0 
 If the link $j$ follows a prismatic joint then the change of joint coordinate $dd_{j}$, corresponds to a translation along the $z$ axis of the link $j-1$ coordinate frame or:
 
 $$\Delta_{revolute} = \begin{pmatrix}0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & dd \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+
+If we define $U_{j} = (A_{j} * A_{j+1} * ... * A_{N})$ with elements:
+
