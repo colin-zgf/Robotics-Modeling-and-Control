@@ -22,9 +22,9 @@ The physical meaning of above formula is that the orthnormal rotation matix chan
 
 Rearranging the above formula leads to
 
-$$\begin{align}\delta_{t}S(\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{align}$$
+$$\begin{align}\delta_{t}S(\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3}\end{align}$$
 
-$$\begin{align}S(\delta_{t}\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{align}$$
+$$\begin{align}S(\delta_{t}\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3}\end{align}$$
 
 Thus the angular velocty change during $\delta_{t}$ is 
 
