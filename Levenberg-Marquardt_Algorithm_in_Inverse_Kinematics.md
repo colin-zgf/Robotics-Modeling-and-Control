@@ -79,3 +79,5 @@ Now, **what is this delta in the prevous section? It is the term $|T_{e} - T(q)|
 After that
 
 $$\begin{align}q_{new} = q_{old} + dq\end{align}$$ 
+
+The process continues until the second norm of $|T_{e} - T(q)|$ is smaller than a cerain threshold.
