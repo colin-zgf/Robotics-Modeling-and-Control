@@ -1,5 +1,7 @@
 # Levenberg-Marquardt Algorithm in Inverse Kinematics
 
+The Levenberg-Marquardt Algorithm was developed to solve the non-linear least squares problems. Before introduce the Levenberg-Marquardt Algorithm, we would like to introduce some mathematics in rotation matrix.
+
 ## Mathematics in Rotation Matrix
 
 Consider the approximation to the derivative
@@ -36,13 +38,15 @@ If the format of homogenous transformation is given as,
 
 $$T = \begin{bmatrix}R_{t} & tran_{t} \\\ 0_{3\times 3} & 1 \end{bmatrix}$$
 
-Then, the change during $\delta_{t}$ can be expressed as
+Then, the change during $\delta_{t}$ between two consecutive homogenous transformation can be expressed as
 
 $$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}tran_{t+\delta_{t}} - tran_{t} \\\ vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{bmatrix}$$
 
-Then the difference between two consecutive homogenous transformation is:
+**So, what is this delta?** Based on [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md), **it is the term $dq_{N \times 1}$ on the right side of the formula below:**
 
+$$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
 
+## Levenberg-Marquardt Algorithm
 
-The Levenberg-Marquardt Algorithm was developed to solve the non-linear least squares problems. The primary application of the Levenberg–Marquardt algorithm is in the least-squares curve fitting problem: given a set of {\displaystyle m}m empirical datum pairs {\displaystyle \left(x_{i},y_{i}\right)}{\displaystyle \left(x_{i},y_{i}\right)} of independent and dependent variables, find the parameters {\displaystyle {\boldsymbol {\beta }}}{\boldsymbol {\beta }} of the model curve {\displaystyle f\left(x,{\boldsymbol {\beta }}\right)}{\displaystyle f\left(x,{\boldsymbol {\beta }}\right)} so that the sum of the squares of the deviations {\displaystyle S\left({\boldsymbol {\beta }}\right)}{\displaystyle S\left({\boldsymbol {\beta }}\right)} is minimized:
+Like other numeric minimization algorithms, the Levenberg–Marquardt algorithm is an iterative procedure. To start a minimization in inverse kinematics, one needs to provide the initial joint variable values, e.g. all joint variable values are set to 0. **What we want to calculate is the converged joint variable values once given the end-effector position.** 
 
