@@ -28,7 +28,7 @@ $$\begin{align}S(\delta_{t}\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\
 
 Thus the angular velocty change during $\delta_{t}$ is 
 
-$$\begin{align}\delta_{\Theta} = vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3}))\end{align}$$
+$$\begin{align}\delta_{\Theta} = vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{align}$$
 
 where **vex** represents the inverse function of skey matrix.
 
@@ -38,7 +38,7 @@ $$T = \begin{bmatrix}R_{t} & tran_{t} \\\ 0_{3\times 3} & 1 \end{bmatrix}$$
 
 Then, the change during $\delta_{t}$ can be expressed as
 
-$$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}S(\delta_{t}\omega) & \delta_{d} \\\ 0_{3\times 3} & 1\end{bmatrix}$$
+$$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}tran_{t+\delta_{t}} - tran_{t} \\\ vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{bmatrix}$$
 
 Then the difference between two consecutive homogenous transformation is:
 
