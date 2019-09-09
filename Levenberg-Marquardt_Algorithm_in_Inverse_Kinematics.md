@@ -62,5 +62,8 @@ $$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) - J(q)dq}{\sigma}||^2
 
 $$\begin{align}objective = argmin_{q} |T_{e} - T(q) - J(q)dq|^TW|T_{e} - T(q) - J(q)dq|\end{align}$$ 
 
-$$\begin{align}objective = argmin_{q} |T_{e} - T(q)|^TW|T_{e} - T(q)| - 2|T_{e} - T(q)|^TWJ(q)dq + (dq)^TJ(q)^TWj(q)dq\end{align}$$
+$$\begin{align}objective = argmin_{q} |T_{e} - T(q)|^TW|T_{e} - T(q)| - 2|T_{e} - T(q)|^TWJ(q)dq + (dq)^TJ(q)^TWJ(q)dq\end{align}$$
 
+Take the derivative of objective with respect to $dq$ and set to zero:
+
+$$\begin{align}(J(q)^TWJ(q))dq = J(q)^TW|T_{e} - T(q)|\end{align}$$
