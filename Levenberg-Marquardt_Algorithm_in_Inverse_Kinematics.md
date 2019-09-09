@@ -44,9 +44,19 @@ $$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}tran_{t+\delta_{t}} -
 
 **So, what is this delta?** Based on [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md), **it is the term $dq_{N \times 1}$ on the right side of the formula below:**
 
-$$\begin{bmatrix}d_{x} \\\ d_{y} \\\ d_{z} \\\ \delta_{x} \\\ \delta_{y}\\\ \delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
+$$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
 
 ## Levenberg-Marquardt Algorithm
 
 Like other numeric minimization algorithms, the Levenberg–Marquardt algorithm is an iterative procedure. To start a minimization in inverse kinematics, one needs to provide the initial joint variable values, e.g. all joint variable values are set to 0. **What we want to calculate is the converged joint variable values once given the end-effector position.** 
+
+Based on Taylor expansion,
+
+$$\begin{align}\T_{e} \approx T(q) + J(q)dq\end{align}$$
+
+where $T_e$ mean the transformation matrix corresponding to the end-effector, $T(q)$ is the transformation matrix/prediction during iteration, and $dq$ is the difference of joint variables between two consecutive iterations.
+
+The objective is we want the difference between the end-effector transformation matrix and the predicted transformation matrix to be small enough, namely,
+
+$$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) + J(q)dq}{\sigma}||^2\end{align}$$
 
