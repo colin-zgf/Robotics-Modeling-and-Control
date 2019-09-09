@@ -49,13 +49,13 @@ $$\Delta_{revolute} = \begin{pmatrix}0 & -d_{\theta} & 0 & 0 \\\ d_{\theta} & 0 
 
 If the link $j$ follows a prismatic joint then the change of joint coordinate $dd_{j}$, corresponds to a translation along the $z$ axis of the link $j-1$ coordinate frame or:
 
-$$\Delta_{revolute} = \begin{pmatrix}0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & dd \\\  0 & 0 & 0 & 0\end{pmatrix}$$
+$$\Delta_{prismatic} = \begin{pmatrix}0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & 0 \\\ 0 & 0 & 0 & dd \\\  0 & 0 & 0 & 0\end{pmatrix}$$
 
 If we define $U_{j} = (A_{j} * A_{j+1} * ... * A_{N})$ with elements:
 
 $$U_{j} = \begin{pmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y} & p_{y} \\\ n_{z} & o_{z} & a_{z} & p_{z} \\\  0 & 0 & 0 & 1\end{pmatrix}$$
 
-Then,
+Then for revolute joint,
 
 $$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{revolute} * U_{j}\end{align}$$
 
@@ -74,3 +74,7 @@ $$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{prismatic} * U_{j}\end{align}$
 and
 
 $$\Delta_{TN} = \begin{bmatrix}0 & 0 & 0 & n_{z} \\\ 0 & 0 & 0 & o_{z}  \\\ 0 & 0 & 0 & a_{z} \\\  0 & 0 & 0 & 0\end{bmatrix}dd_{j}$$
+
+Writing $\Delta_{TN}$ in the form of a column vector representing a differential translation and rotation leads to:
+
+$$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix}dd_{j}$$ = **$$\begin{bmatrix}J\end{bmatrix}dd_{j}$$** dq
