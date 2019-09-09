@@ -44,7 +44,7 @@ $$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}tran_{t+\delta_{t}} -
 
 **So, what is this delta?** Based on [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md), **it is the term $dq_{N \times 1}$ on the right side of the formula below:**
 
-$$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
+$$\begin{bmatrix}d_{x} \\\ d_{y} \\\ d_{z} \\\ \delta_{x} \\\ \delta_{y}\\\ \delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
 
 ## Levenberg-Marquardt Algorithm
 
