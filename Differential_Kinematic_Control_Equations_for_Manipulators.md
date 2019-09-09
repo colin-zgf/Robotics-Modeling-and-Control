@@ -79,7 +79,7 @@ Writing $\Delta_{TN}$ in the form of a column vector representing a differential
 
 $$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = \begin{bmatrix}J_{6\times N}\end{bmatrix} dq_{N \times 1}$$
 
-Therefore, the Jacobian Matrix $\begin{bmatrix}J_{6\times N}\end{bmatrix}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
+Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
 
 For revolute, each column is the form of:
 
