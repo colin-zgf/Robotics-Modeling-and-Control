@@ -34,11 +34,11 @@ where **vex** represents the inverse function of skey matrix.
 
 If the format of homogenous transformation is given as, 
 
-$$\begin{bmatrix}T = R_{t} & tran_{t} \\\ 0_{3\times 3} & 1 \end{bmatrix}$$
+$$T = \begin{bmatrix}R_{t} & tran_{t} \\\ 0_{3\times 3} & 1 \end{bmatrix}$$
 
 Then, the change during $\delta_{t}$ can be expressed as
 
-$$delta = \Delta(T_{t}, T{t+\delta_{t}}) = \begin{bmatrix}S(\delta_{t}\omega) & \delta_{d} \\\ 0_{3\times 3} & 1\end{bmatrix}$$
+$$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}S(\delta_{t}\omega) & \delta_{d} \\\ 0_{3\times 3} & 1\end{bmatrix}$$
 
 Then the difference between two consecutive homogenous transformation is:
 
