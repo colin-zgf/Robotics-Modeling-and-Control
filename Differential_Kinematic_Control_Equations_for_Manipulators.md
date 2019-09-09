@@ -83,8 +83,8 @@ Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the fo
 
 For revolute, each column is the form of:
 
-$$\Delta_{TN} = \begin{bmatrix}p_{x}n_{y} - n_{x}p_{y} \\\ p_{x}o_{y} - o_{x}p_{y} \\\ p_{x}a_{y} - a_{x}p_{y} \\\  n_{z} \\\ o_{z} \\\ a_{z}\end{bmatrix}$$
+$$\begin{bmatrix}p_{x}n_{y} - n_{x}p_{y} \\\ p_{x}o_{y} - o_{x}p_{y} \\\ p_{x}a_{y} - a_{x}p_{y} \\\  n_{z} \\\ o_{z} \\\ a_{z}\end{bmatrix}$$
 
 For prismatic, each column is the form of:
 
-$$\Delta_{TN} = \begin{bmatrix}n_{z} \\\ o_{z} \\\ a_{z} \\\  0 \\\ 0 \\\ 0\end{bmatrix}$$
+$$\begin{bmatrix}n_{z} \\\ o_{z} \\\ a_{z} \\\  0 \\\ 0 \\\ 0\end{bmatrix}$$
