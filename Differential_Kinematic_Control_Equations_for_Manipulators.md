@@ -65,6 +65,6 @@ $$\Delta_{TN} = \begin{pmatrix}0 & o_{x}n_{y}-o_{y}n_{x} & a_{x}n_{y}-a_{y}n_{x}
 
 Treating **$n$**, **$o$**, and **$a$** as vectors we can rewrite this in terms of the vector cross product:
 
-$$\Delta_{TN} = \begin{bmatrix}0 & -a_{z} & o_{z} && (p \times n)~{z} \\ a_{z} & 0 & (a \times o) & (p \times o)  \\\ (n \times a) & (o \times a) & 0 & (p \times a) \\\  0 & 0 & 0 & 0\end{bmatrix}$$
+$$\Delta_{TN} = \begin{bmatrix}0 & -a_{z} & o_{z} && (p \times n)_z \\ a_{z} & 0 & (a \times o) & (p \times o)  \\\ (n \times a) & (o \times a) & 0 & (p \times a) \\\  0 & 0 & 0 & 0\end{bmatrix}$$
 
 
