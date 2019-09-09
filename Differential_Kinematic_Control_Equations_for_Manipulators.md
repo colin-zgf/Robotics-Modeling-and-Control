@@ -57,7 +57,7 @@ $$U_{j} = \begin{pmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y}
 
 Then,
 
-$$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{j} * U_{j}\end{align}$$
+$$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{revolute} * U_{j}\end{align}$$
 
 and
 
@@ -67,4 +67,10 @@ Treating **$n$**, **$o$**, and **$a$** as vectors we can rewrite this in terms o
 
 $$\Delta_{TN} = \begin{bmatrix}0 & -a_{z} & o_{z} & p_{x}n_{y} - n_{x}p_{y} \\\ a_{z} & 0 & -n_{z} & p_{x}o_{y} - o_{x}p_{y}  \\\ -o_{z} & n_{z} & 0 & p_{x}a_{y} - a_{x}p_{y} \\\  0 & 0 & 0 & 0\end{bmatrix}d\theta_{j}$$
 
+In the case of a prismatic joint,
 
+$$\begin{align}\Delta_{TN} = U_{j}^{-1} * \Delta_{prismatic} * U_{j}\end{align}$$
+
+and
+
+$$\Delta_{TN} = \begin{bmatrix}0 & 0 & 0 & n_{z} \\\ 0 & 0 & 0 & o_{z}  \\\ 0 & 0 & 0 & a_{z} \\\  0 & 0 & 0 & 0\end{bmatrix}dd_{j}$$
