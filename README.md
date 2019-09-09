@@ -1,7 +1,7 @@
 # Robotics-Modeling-and-Control
 
 ## Contact Info
-If you have any questions, please leave a message or send me the email through 
+If you have any questions, please leave a message or send me the email to 
 
 **guangfeishanghai@sina.com** or **zhuguangfei6699@gmail.com**
 
