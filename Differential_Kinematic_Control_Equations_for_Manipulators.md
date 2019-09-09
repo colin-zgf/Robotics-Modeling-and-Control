@@ -32,7 +32,7 @@ $$\begin{align}dT = T * \Delta_{T}\end{align}$$
 
 Assume $T_{N}$ describes the end of the manipulator where N is the number of joints. We will evaluate $\Delta_{TN}$ as a function of changes of joint coordinates, and if $dT_{N}$ is desired then we simply premultiply $\Delta_{TN}$ by $T_{N}$ to obtain $dT_{N}$. If in the case of a manipulator we were to make a change with respect to a link coordinate frame $j - 1$ of $\Delta_{j}$ we could find an equivalent change in $T_{N}$, $\Delta_{TN}$ expressed as
 
-$$\begin{align}T_{N}* \Delta_{TN} = A_{1} * A_{2} * ... * A_{j-1} * \Delta_{j} * A_{j} * ... * A_{N-1} * A_{N}\end{align}$$
+$$\begin{align}T_{N}* \Delta_{TN} = A_{1} * A_{2} * ... * A_{j-1} * \Delta_{j} * A(o \times n)_{j} * ... * A_{N-1} * A_{N}\end{align}$$
 
 Since 
 
@@ -65,6 +65,6 @@ $$\Delta_{TN} = \begin{pmatrix}0 & o_{x}n_{y}-o_{y}n_{x} & a_{x}n_{y}-a_{y}n_{x}
 
 Treating **$n$**, **$o$**, and **$a$** as vectors we can rewrite this in terms of the vector cross product:
 
-$$\Delta_{TN} = \begin{bmatrix}0 & -a_{z} & o_{z} && (p \times n)_{z} \\\ (n \times o) & 0 & (a \times o) & (p \times o)  \\\ (n \times a) & (o \times a) & 0 & (p \times a) \\\  0 & 0 & 0 & 0\end{bmatrix}$$
+$$\Delta_{TN} = \begin{bmatrix}0 & -a_{z} & o_{z} && (p \times n)_{z} \\\ a_{z} & 0 & (a \times o) & (p \times o)  \\\ (n \times a) & (o \times a) & 0 & (p \times a) \\\  0 & 0 & 0 & 0\end{bmatrix}$$
 
 
