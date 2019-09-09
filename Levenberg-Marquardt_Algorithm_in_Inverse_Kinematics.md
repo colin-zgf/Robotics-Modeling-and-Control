@@ -58,5 +58,5 @@ where $T_e$ mean the transformation matrix corresponding to the end-effector, $T
 
 The objective is we want the difference between the end-effector transformation matrix and the predicted transformation matrix to be small enough, namely,
 
-$$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) - J(q)dq}{\sigma}||^2\end{align}$$
+$$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) - J(q)dq}{\sigma}||^2 = argmin_{q} |T_{e} - T(q) - J(q)dq|^TW|T_{e} - T(q) - J(q)dq| = argmin_{q} |T_{e} - T(q)|^TW|T_{e} - T(q)| - |T_{e} - T(q)|^TWJ(q)dq - (J(q)dq)^TW|T_{e} - T(q)| + (dq)^TJ(q)^TWj(q)dq\end{align}$$
 
