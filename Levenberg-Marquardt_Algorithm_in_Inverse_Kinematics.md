@@ -60,7 +60,7 @@ $$\begin{align}objective = argmin_{q} |T_{e} - T(q) - J(q)dq|^TW|T_{e} - T(q) - 
 
 $$\begin{align}objective = argmin_{q} |T_{e} - T(q)|^TW|T_{e} - T(q)| - 2|T_{e} - T(q)|^TWJ(q)dq + (dq)^TJ(q)^TWJ(q)dq\end{align}$$
 
-where $W$ is the weighting matrix and is diagonal with $W = 1/\sigma$ when $\siama$ is set to 1. 
+where $W$ is the weighting matrix and is diagonal with $W = 1/\sigma$ when $\sigma$ is set to 1. 
 
 Take the derivative of objective with respect to $dq$ and set to zero:
 
