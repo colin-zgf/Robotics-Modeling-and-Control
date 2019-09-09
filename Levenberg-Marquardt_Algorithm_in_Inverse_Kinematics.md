@@ -42,10 +42,6 @@ Then, the change during $\delta_{t}$ between two consecutive homogenous transfor
 
 $$delta = \Delta(T_{t}, T_{t+\delta_{t}}) = \begin{bmatrix}tran_{t+\delta_{t}} - tran_{t} \\\ vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{bmatrix}$$
 
-**So, what is this delta?** Based on [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md), **it is the term $dq_{N \times 1}$ on the right side of the formula below:**
-
-$$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = J_{6\times N} dq_{N \times 1}$$
-
 ## Levenberg-Marquardt Algorithm
 
 Like other numeric minimization algorithms, the Levenberg–Marquardt algorithm is an iterative procedure. To start a minimization in inverse kinematics, one needs to provide the initial joint variable values, e.g. all joint variable values are set to 0. **What we want to calculate is the converged joint variable values once given the end-effector position.** 
@@ -77,3 +73,9 @@ $$\begin{align}(J(q)^TWJ(q) + \lambda diag(J(q)^TWJ(q)))dq = J(q)^TW|T_{e} - T(q
 Thus, 
 
 $$\begin{align}dq = (J(q)^TWJ(q) + \lambda diag(J(q)^TWJ(q)))^{-1}J(q)^TW|T_{e} - T(q)|\end{align}$$
+
+Now, **what is this delta in the prevous section? It is the term $|T_{e} - T(q)|$ on the right side of the formula abouve:**
+
+After that
+
+$$\begin{align}q_{new} = q_{old} + dq\end{align}$$ 
