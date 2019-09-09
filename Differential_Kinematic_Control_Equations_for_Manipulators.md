@@ -67,4 +67,21 @@ Treating **$n$**, **$o$**, and **$a$** as vectors we can rewrite this in terms o
 
 $$\Delta_{TN} = \begin{pmatrix}0 & (o \prod n)_{z} & (a x n) & (p x n) \\\ (n x o) & 0 & (a x o) & (p x o)  \\\ (n x a) & (o x a) & 0 & (p x a) \\\  0 & 0 & 0 & 0\end{pmatrix}$$
 
-$\overrightarrow{AB}$
+$\prod$
+$\coprod$	
+$\bigoplus$
+$\bigotimes$	
+$\bigodot$
+$\bigcup$	
+$\bigcap$	
+$\biguplus$
+$\bigsqcup$	
+$\bigvee$	
+$\bigwedge$	
+$\int$	
+$\oint$	
+$\iint$	
+$\iiint$
+$\idotsint$	\idotsint
+$\sum_{\substack{0<i<m\0<j<n}} P(i, j)$	
+$\int\limits_a^b$
