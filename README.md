@@ -9,9 +9,9 @@ If you have any questions, please leave a message or send the email to
 
 One should download the [robotics toolbox](https://github.com/petercorke/robotics-toolbox-matlab) and install it according to the steps. Then one needs to set the path in matlab file 'pathdef.m' so that the robotics toolbox can be loaded into matlab.
 
-## Content
+## Contents
 
-The following are included in this section:
+The following are included:
 
 - [Forward and Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/forward_and_inverse_kinematics.md)
 - [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md)
