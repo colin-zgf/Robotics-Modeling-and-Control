@@ -52,11 +52,11 @@ Like other numeric minimization algorithms, the Levenberg–Marquardt algorithm 
 
 Based on Taylor expansion,
 
-$$\begin{align}\T_{e} \approx T(q) + J(q)dq\end{align}$$
+$$\begin{align}\T_{e} \approx T(q) + J(q)dq \end{align}$$
 
 where $T_e$ mean the transformation matrix corresponding to the end-effector, $T(q)$ is the transformation matrix/prediction during iteration, and $dq$ is the difference of joint variables between two consecutive iterations.
 
 The objective is we want the difference between the end-effector transformation matrix and the predicted transformation matrix to be small enough, namely,
 
-$$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) + J(q)dq}{\sigma}||^2\end{align}$$
+$$\begin{align}objective = argmin_{q} ||\frac{T_{e} - T(q) - J(q)dq}{\sigma}||^2\end{align}$$
 
