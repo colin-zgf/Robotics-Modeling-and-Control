@@ -2,6 +2,8 @@
 
 ## Mathematics in Rotation Matrix
 
+Consider the approximation to the derivative
+
 $$\begin{align}\dot{R} \approx \frac{R_{t+\delta_{t}} - R_{t}}{\delta_{t}}\end{align}$$
 
 which we rearrange as
@@ -17,6 +19,30 @@ One gets
 $$\begin{align}R_{t+\delta_{t}} \approx \delta_{t}S(\omega)R_{t} +R_{t} \approx (\delta_{t}S(\omega)+I_{3\times 3})R_{t}\end{align}$$
 
 The physical meaning of above formula is that the orthnormal rotation matix changes as a function of angular velocity.
+
+Rearranging the above formula leads to
+
+$$\begin{align}\delta_{t}S(\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{align}$$
+
+$$\begin{align}S(\delta_{t}\omega) = R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3})\end{align}$$
+
+Thus the angular velocty change during $\delta_{t}$ is 
+
+$$\begin{align}\delta_{\Theta} = vex(R_{t+\delta_{t}}R_{t}^{T} - I_{3\times 3}))\end{align}$$
+
+where **vex** represents the inverse function of skey matrix.
+
+If the format of homogenous transformation is given as, 
+
+$$\begin{align}T = {bmatrix}R_{t} & tran_{t} \\\ 0_{3\times 3} & 1 {bmatrix}\end{align}$$
+
+Then, the change during $\delta_{t}$ can be expressed as
+
+$$\begin{align}delta = \Delta(T_{t}, T{t+\delta_{t}}) = {bmatrix}S(\delta_{t}\omega) & \delta_{d} \\\ 0_{3\times 3} & 1 {bmatrix}\end{align}$$
+
+Then the difference between two consecutive homogenous transformation is:
+
+
 
 The Levenberg-Marquardt Algorithm was developed to solve the non-linear least squares problems. The primary application of the Levenberg–Marquardt algorithm is in the least-squares curve fitting problem: given a set of {\displaystyle m}m empirical datum pairs {\displaystyle \left(x_{i},y_{i}\right)}{\displaystyle \left(x_{i},y_{i}\right)} of independent and dependent variables, find the parameters {\displaystyle {\boldsymbol {\beta }}}{\boldsymbol {\beta }} of the model curve {\displaystyle f\left(x,{\boldsymbol {\beta }}\right)}{\displaystyle f\left(x,{\boldsymbol {\beta }}\right)} so that the sum of the squares of the deviations {\displaystyle S\left({\boldsymbol {\beta }}\right)}{\displaystyle S\left({\boldsymbol {\beta }}\right)} is minimized:
 
