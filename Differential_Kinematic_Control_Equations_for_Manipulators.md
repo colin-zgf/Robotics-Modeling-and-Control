@@ -78,3 +78,13 @@ $$\Delta_{TN} = \begin{bmatrix}0 & 0 & 0 & n_{z} \\\ 0 & 0 & 0 & o_{z}  \\\ 0 & 
 Writing $\Delta_{TN}$ in the form of a column vector representing a differential translation and rotation leads to:
 
 $$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\\ T_{N}\delta_{y}\\\ T_{N}\delta_{z}\end{bmatrix} = \begin{bmatrix}J_{6\times N}\end{bmatrix} dq_{N \times 1}$$
+
+Therefore, the Jacobian Matrix $\begin{bmatrix}J_{6\times N}\end{bmatrix}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
+
+For revolute, each column is the form of:
+
+$$\Delta_{TN} = \begin{bmatrix}p_{x}n_{y} - n_{x}p_{y} \\\ p_{x}o_{y} - o_{x}p_{y} \\\ p_{x}a_{y} - a_{x}p_{y} \\\  n_{z} \\\ o_{z} \\\ a_{z}\end{bmatrix}d\theta_{j}$$
+
+For prismatic, each column is the form of:
+
+$$\Delta_{TN} = \begin{bmatrix}n_{z} \\\ o_{z} \\\ a_{z} \\\  0 \\\ 0 \\\ 0\end{bmatrix}d\theta_{j}$$
