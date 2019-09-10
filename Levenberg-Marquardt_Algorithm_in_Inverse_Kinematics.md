@@ -1,3 +1,9 @@
+---
+layout: post
+mathjax: true
+comments: true
+---
+
 # Levenberg-Marquardt Algorithm in Inverse Kinematics
 
 The Levenberg-Marquardt Algorithm was developed to solve the non-linear least squares problems. Before introduce the Levenberg-Marquardt Algorithm, we would like to introduce some mathematics in rotation matrix.
