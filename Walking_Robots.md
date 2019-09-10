@@ -10,7 +10,7 @@ Before design the one-leg, one needs to define the path that the end-effector of
 
 The path and corresponding segments are listed in the table below:
 
-Point $i$ | $x$-coordinate | $x$-coordinate | $x$-coordinate
+Point $i$ | $x$-coordinate | $y$-coordinate | $z$-coordinate
 -----| --------|--------------|---------
 1|    0.0500  |  0.0500  |  0.0500
 2|   -0.0500  |  0.0500  |  0.0500
@@ -18,4 +18,8 @@ Point $i$ | $x$-coordinate | $x$-coordinate | $x$-coordinate
 4|    0.0500  |  0.0500  |  0.0200
 5|    0.0500  |  0.0500  |  0.0500
 
-The time consumption for 1->2, 2->3, 3->4, and 4->5 are 3s, 0.25s, 0.5s, and 0.25s, repectively. That means it takes the leg 3/4 of the cycle for moving from froward to backward with the rest 1/4 cycle for resetting.
+The time consumption for 1->2, 2->3, 3->4, and 4->5 are 3s, 0.25s, 0.5s, and 0.25s, repectively. That means it takes the leg 3/4 of the cycle for moving from froward to backward with the rest 1/4 cycle for resetting. If we set the time step 0.01s, then there will be 400 points for each cycle.
+
+The [one-leg motion code](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/SImpleWalkingRobot.m) shows the process for one leg motion. The results is shown below:
+
+![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/1_one_leg_motion.gif)
