@@ -1,15 +1,13 @@
----
-layout: post
-mathjax: true
-comments: true
----
-
 # Robotics-Modeling-and-Control
 
 ## Contact Info
 If you have any questions, please leave a message or send the email to 
 
 **guangfeishanghai@sina.com** or **zhuguangfei6699@gmail.com**
+
+## Very Important Note
+
+**If you would like to see all formulas in all .md file, please add the MathJax Plugin. The steps to add the plugin is search the [Chrome app store](https://chrome.google.com/webstore/category/extensions) and type 'mathjax' in the 'search' section. Then add MathJax Plugin for Github**
 
 ## Installation
 
