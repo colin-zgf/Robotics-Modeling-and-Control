@@ -1,3 +1,9 @@
+---
+layout: post
+mathjax: true
+comments: true
+---
+
 # Robotics-Modeling-and-Control
 
 ## Contact Info
