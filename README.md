@@ -27,3 +27,17 @@ The following are included:
 - [Robotics Vision and Control Fundamental Algorithms in Matlab](https://github.com/ErlangZ/Ebooks/blob/master/Robotics%2C%20vision%20and%20control%20fundamental%20algorithms%20in%20MATLAB%26amp%3Breg%3B.pdf)
 - [Differential Kinematic Control Equations for Simple Manipulators](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4308714)
 - [The Levenberg-Marquardt algorithm for nonlinear least squares curve-fitting problems](http://people.duke.edu/~hpgavin/ce281/lm.pdf)
+
+
+$$
+%% Comment -- define some macros
+\def\Xbar{\overline{X}_\bullet}
+\def\sumn{\sum_{i=1}^{n}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{align}
+\sumn \left(X_i - \Xbar\right) &= \sumn X_i - \sumn \Xbar \\
+&= \sumn X_i - n \Xbar \\
+&= \sumn X_i - \sumn X_i \\
+&= 0
+\end{align}
+$$
