@@ -25,7 +25,7 @@ zu = 20; % the height of the foot in the z-direction for foot up
 zd = 50; % the height of the foot in the z-direction for foot down
 path = [xf y zd; xb y zd; xb y zu; xf y zu; xf y zd] * 1e-3;
 % Sample the multi-segment path at 100 Hz
-p = mstraj(path, [], [0, 3, 0.25, 0.5, 0.25], path(1,:), 0.05, 0);
+p = mstraj(path, [], [0, 3, 0.25, 0.5, 0.25], path(1,:), 0.01, 0);
 qcycle = leg.ikine(transl(p), 'mask', [1,1,1, 0, 0, 0]);
 
 plotopt = {'noraise', 'nobase', 'noshadow', 'nowrist', 'nojaxes', 'delay', 0};
