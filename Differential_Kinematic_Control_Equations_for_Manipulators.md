@@ -1,3 +1,9 @@
+---
+layout: post
+mathjax: true
+comments: true
+---
+
 # Differential Kinematic Control Equations for Manipulators
 
 In this section, we will discuss a general method for obtaining the Jacobian with differential change in position and orientation as dependent variables and differential change in joint variables as independent variables.
