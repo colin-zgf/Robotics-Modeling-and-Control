@@ -20,6 +20,7 @@ The following are included:
 - [Forward and Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Forward_and_Inverse_Kinematics.md)
 - [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md)
 - [Levenberg-Marquardt Algorithm in Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Levenberg-Marquardt_Algorithm_in_Inverse_Kinematics.md)
+- [Walking-Robots](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Walking_Robots.md)
 
 ## Codes
 
