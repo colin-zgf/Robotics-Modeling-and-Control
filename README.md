@@ -32,12 +32,4 @@ The following are included:
 $$
 %% Comment -- define some macros
 \def\Xbar{\overline{X}_\bullet}
-\def\sumn{\sum_{i=1}^{n}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{align}
-\sumn \left(X_i - \Xbar\right) &= \sumn X_i - \sumn \Xbar \\
-&= \sumn X_i - n \Xbar \\
-&= \sumn X_i - \sumn X_i \\
-&= 0
-\end{align}
 $$
