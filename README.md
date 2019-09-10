@@ -28,8 +28,10 @@ The following are included:
 - [Differential Kinematic Control Equations for Simple Manipulators](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4308714)
 - [The Levenberg-Marquardt algorithm for nonlinear least squares curve-fitting problems](http://people.duke.edu/~hpgavin/ce281/lm.pdf)
 
-
 $$
-%% Comment -- define some macros
-\def\Xbar{\overline{X}_\bullet}
+\begin{align}
+3+x &=4 && \text{(Solve for} x \text{.)}\\
+x &=4-3 && \text{(Subtract 3 from both sides.)}\\
+x &=1 && \text{(Yielding the solution.)}
+\end{align}
 $$
