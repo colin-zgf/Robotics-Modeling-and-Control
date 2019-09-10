@@ -22,4 +22,4 @@ The time consumption for 1->2, 2->3, 3->4, and 4->5 are 3s, 0.25s, 0.5s, and 0.2
 
 The [one-leg motion code](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/SImpleWalkingRobot.m) shows the process for one leg motion. The results is shown below:
 
-![alt tag](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/1_one_leg_motion.gif)
+![](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/1_one_leg_motion.gif)
