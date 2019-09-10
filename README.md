@@ -13,7 +13,7 @@ One should download the [robotics toolbox](https://github.com/petercorke/robotic
 
 The following are included:
 
-- [Forward and Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/forward_and_inverse_kinematics.md)
+- [Forward and Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Forward_and_Inverse_Kinematics.md)
 - [Differential Kinematic Control Equations for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Differential_Kinematic_Control_Equations_for_Manipulators.md)
 - [Levenberg-Marquardt Algorithm in Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Levenberg-Marquardt_Algorithm_in_Inverse_Kinematics.md)
 
