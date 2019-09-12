@@ -30,7 +30,7 @@ $$\begin{bmatrix}R^{-1} & -R^{-1}p \\\ 0_{3 \times 3} & 1\end{bmatrix}$$
 
 Since $R^{-1} = R^{T}$, the product $-R^{-1}p$ is just
 
-$$begin{bmatrix}-p \cdot n \\\ -p \cdot o \\\ -p \cdot a\end{bmatrix}$$
+$$\begin{bmatrix}-p \cdot n \\\ -p \cdot o \\\ -p \cdot a\end{bmatrix}$$
 
 
 The homogneous transformation matrix describing
