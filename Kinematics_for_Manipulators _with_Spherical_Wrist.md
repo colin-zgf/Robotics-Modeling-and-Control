@@ -90,4 +90,4 @@ $$T_{6} = A_{1}A_{23}A_{4}A_{5}A_{6}\tag{17}$$
 
 We will evaluate this matrix from right to left, making use of intermediate product matrices $U_{i}$, which we will also need for the solution and the computation of the Jacobian, as follows:
 
-$$U_{6} = A_{6} \\\ U_{5} = A_{5}U_{6}tag{17}$$
+$$U_{6} = A_{6} \\\ U_{5} = A_{5}U_{6}\tag{18}$$
