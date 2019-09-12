@@ -258,7 +258,7 @@ $$r = \sqrt{a_{3}^{2} + d_{4}^{2}} \quad and \quad \phi = tan^{-1}\frac{a_{3}}{d
 
 Making the trigonometric substitution above, one obtains
 
-$$r\tan (\phi - \theta_{3})= \frac{V_{214}}{V_{224}}\tag{60}$$
+$$\tan (\phi - \theta_{3})= \frac{V_{214}}{V_{224}}\tag{60}$$
 
 **$$\theta_{3} = tan^{-1}\frac{a_{3}}{d_{4}} - tan^{-1}\frac{C_{2}V_{114} + S_{2}p_{z} -a_{2}}{C_{2}p_{z} - S_{2}V_{114}}\tag{61}$$**
 
