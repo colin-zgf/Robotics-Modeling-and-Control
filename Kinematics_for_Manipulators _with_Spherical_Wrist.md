@@ -176,4 +176,8 @@ $$S_{1}p_{x} - C_{1}p_{y} = d_{3}\tag{40}$$
 
 Let:
 
-$$r\sin (\phi)=p_{y} \qquad -r\cos (\phi)=p_{x} \qquad with \qquad r > 0\tag{40}$$
+$$r\sin (\phi)=p_{y}, \quad -r\cos (\phi)=p_{x} \quad with \qquad r > 0\tag{41}$$
+
+Then,
+
+$$r = \sqrt{p_{x}^{2} + p_{y}^{2}} \quad and \quad \phi = tan^{-1}\frac{p_{y}}{p_{x}}\tag{42}$$
