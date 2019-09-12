@@ -190,11 +190,11 @@ $$r\sin (\theta_{1} - \phi)= \frac{d_{3}}{r}\tag{43}$$
 
 and
 
-**$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + sin^{-1}\frac{d_{3}}{r}\tag{44}$$**
+$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + sin^{-1}\frac{d_{3}}{r}\tag{44}$$
 
 The $sin^{-1}$ function is double valued so that a second solution exists for $\theta_{1}$:
 
-**$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$**
+$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$
 
 - **$\theta_{2}$ Calculation**
 
@@ -232,11 +232,11 @@ $$\psi = cos^{-1}\frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{
 
 then
 
-**$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} + \psi\tag{54}$$**
+$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} + \psi\tag{54}$$
 
 where $V_{114} = C_{1}p_{x} + S_{1}p_{y}$ (here need to do some simple calculation). As the $cos^{-1}$ function is double valued so that a second solution exists for $\theta_{2}$:
 
-**$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} - \psi\tag{55}$$**
+$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} - \psi\tag{55}$$
 
 - **$\theta_{3}$ Calculation**
 
@@ -260,9 +260,21 @@ Making the trigonometric substitution above, one obtains
 
 $$\tan (\phi - \theta_{3})= \frac{V_{214}}{V_{224}}\tag{60}$$
 
-**$$\theta_{3} = tan^{-1}\frac{a_{3}}{d_{4}} - tan^{-1}\frac{C_{2}V_{114} + S_{2}p_{z} -a_{2}}{C_{2}p_{z} - S_{2}V_{114}}\tag{61}$$**
+$$\theta_{3} = tan^{-1}\frac{a_{3}}{d_{4}} - tan^{-1}\frac{C_{2}V_{114} + S_{2}p_{z} -a_{2}}{C_{2}p_{z} - S_{2}V_{114}}\tag{61}$$
 
 - **$\theta_{4}$ Calculation**
+
+Next, equating $V_{3}$ to $U_{4}$, we obtain
+
+$$\begin{bmatrix} = V_{31} \\\ V_{32} \\\ V_{33} \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{412} & -C_{4}S_{5} & 0 \\\ ? & U_{422} & -S_{4}S_{5} & 0 \\\ ? & -U_{522} & C_{5} & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{62}$$
+
+We may obtain expressions for the sine and cosine of $\theta_{4}$ as
+
+$$S_{4} = -\frac{1}{S_{5}}V_{323} \\\ C_{4} = -\frac{1}{S_{5}}V_{313}\tag{63}$$
+
+Once again there are two solutions for $\theta_{4}$: one if $sin (\theta_{5})$ is positive and another if it is negative. These two solutions are separated by a singularity when $sin (\theta_{5})$ = 0:
+
+$$\theta_{4} = tan^{-1}\frac{-V_{323}}{-V_{313}} \quad if \quad S_{5}>0, \\\ theta_{4} = tan^{-1}\frac{V_{323}}{V_{313}} \quad if \quad S_{5}<0 \\\ theta_{4} \quad undefined \quad if \quad S_{5}=0\tag{64}$$
 
 
 - **$\theta_{5}$ Calculation**
