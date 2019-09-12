@@ -12,16 +12,25 @@ $$A^{-1} = \begin{bmatrix}n_{x} & n_{y} & n_{z} & -p \cdot n \\\ o_{x} & o_{y} &
 
 This can be easily verified through augmented matrix:
 
-**Proof**
+**Proof:**
 
-$$\begin{bmatrix} R_{3 \times 3} & p & I_{3 \times 3} 0 \\\ 0_{3 \times 3} 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
+$$\begin{bmatrix} R_{3 \times 3} & p & I_{3 \times 3} 0 \\\ 0_{3 \times 3} & 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
 
 Multiplying $R^{-1}$ on the first row leads to
 
-$$\begin{bmatrix} I_{3 \times 3} & R^{-1}p & R^{-1} & 0 \\\ 0_{3 \times 3} 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
+$$\begin{bmatrix} I_{3 \times 3} & R^{-1}p & R^{-1} & 0 \\\ 0_{3 \times 3} & 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
 
 Multiplying $-R^{-1}p$ on the second row and adding it to the first row gives
 
-$$\begin{bmatrix} I_{3 \times 3} & 0 & R^{-1} & R^{-1}p \\\ 0_{3 \times 3} 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
+$$\begin{bmatrix} I_{3 \times 3} & 0 & R^{-1} & -R^{-1}p \\\ 0_{3 \times 3} & 1 & 0_{3 \times 3} & 1\end{bmatrix}$$
+
+Thus, the inverse $A^{-1}$ is
+
+$$\begin{bmatrix}R^{-1} & -R^{-1}p \\\ 0_{3 \times 3} & 1\end{bmatrix}$$
+
+Since $R^{-1} = R^{T}$, the product $-R^{-1}p$ is just
+
+$$begin{bmatrix}-p \cdot n \\\ -p \cdot o \\\ -p \cdot a\end{bmatrix}$$
+
 
 The homogneous transformation matrix describing
