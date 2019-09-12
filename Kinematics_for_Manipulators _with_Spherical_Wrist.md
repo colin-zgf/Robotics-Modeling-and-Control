@@ -162,7 +162,7 @@ The solution is now obtained’by solving the six equations
 
 $$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} = U_{5} \\\ V_{5} = U_{6}\tag{37}$$
 
-- $\theta_{1}$ Calculation
+- **$\theta_{1}$ Calculation**
 
 We first equate $V_{0}$ to $U_{1}$:
 
@@ -196,12 +196,56 @@ The $sin^{-1}$ function is double valued so that a second solution exists for $\
 
 $$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$
 
-### $\theta_{2}$ Calculation
+- **$\theta_{2}$ Calculation**
 
-### $\theta_{3}$ Calculation
+Next, equating $V_{1}$ to $U_{2}$, we obtain
 
-### $\theta_{4}$ Calculation
+$$\begin{bmatrix}C_{1}x + S_{1}y \\\ z \\\ S_{1}x - C_{1}y \\\ w\end{bmatrix} = \begin{bmatrix}C_{23}U_{411} - S_{23}U_{521} & C_{23}U_{412}-S_{23}U_{522} & C_{23}U_{413} - S_{23}C_{5} & -S_{23}d_{4} + C_{23}a_{3} + C_{2}a_{2} \\\ S_{23}U_{411}+C_{23}U_{521} & S_{23}U_{412} + C_{23}U_{522} & S_{23}U_{413} + C_{23}C_{5} & C_{23}d_{4} + S_{23}a_{3} + S_{2}a_{2} \\\ -U_{421} & -U_{422} & -U_{423} & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{46}$$
 
-### $\theta_{5}$ Calculation
+The only two possible element equations that we might solve to obtain a solution for $\theta_{2}$ are the (1, 4) and (2, 4) elements. Equating these elements, we obtain
 
-### $\theta_{6}$ Calculation
+$$V_{114} = -S_{23}d_{4} + C_{23}a_{3} + a_{2}C_{2} \\\ V_{124} = p_{z} = C_{23}d_{4} + S_{23}a_{3} + a_{2}S_{2}\tag{47}$$
+
+Rearrange the formula above, one gets
+
+$$V_{114} - a_{2}C_{2}= -S_{23}d_{4} + C_{23}a_{3} \\\ p_{z} - a_{2}S_{2}= C_{23}d_{4} + S_{23}a_{3}\tag{48}$$
+
+then squaring and adding, we obtain
+
+$$C_{2}V_{114} + S_{2}p_{z} = \frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}}\tag{49}$$
+
+Let:
+
+$$r\sin (\phi)=p_{z}, \quad -r\cos (\phi)=V_{114} \quad with \qquad r > 0\tag{50}$$
+
+Then,
+
+$$r = \sqrt{V_{114}^{2} + p_{z}^{2}} \quad and \quad \phi = tan^{-1}\frac{p_{z}}{V_{114}}\tag{51}$$
+
+Based on Eqn. (50), we obtain
+
+$$\cos (\theta_{2} - \phi)= \frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}}{2a_{2}r}\tag{52}$$
+
+If the value of the expression defining the cosine is greater than 1, the position defined is beyond the reach of the manipulator. If the value of the expression is less than 1, then the position is inside the minimum position that the manipulator can reach. Defining
+
+$$\psi = cos^{-1}\frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}}{2a_{2}r}\tag{53}$$
+
+then
+
+$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} + \psi\tag{54}$$
+
+where $V_{114} = C_{1}p_{x} + S_{1}p_{y}$ (here need to do some simple calculation). As the $cos^{-1}$ function is double valued so that a second solution exists for $\theta_{2}$:
+
+$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} - \psi\tag{55}$$
+
+- **$\theta_{3}$ Calculation**
+
+
+- **$\theta_{4}$ Calculation**
+
+
+- **$\theta_{5}$ Calculation**
+
+
+- **$\theta_{6}$ Calculation**
+
