@@ -34,7 +34,7 @@ Since $R^{-1} = R^{T}$, the product $-R^{-1}p$ is just
 
 $$\begin{bmatrix}-p \cdot n \\\ -p \cdot o \\\ -p \cdot a\end{bmatrix}\tag{7}$$
 
-## Kinematcis with Spherical Wrist
+## Kinematcis with Spherical Wrist (PUMA560)
 
 The homogneous transformation matrix describing position and orientation of the end of a six-degrees-of-freedom manipulator is given by
 
@@ -48,7 +48,7 @@ $$A_{i} = \begin{bmatrix}\cos(\theta_{i}) & -\sin(\theta_{i})\cos(\alpha_{i}) & 
 0 & 0 & 0 & 1\end{bmatrix}\tag{9}$$ 
 
 The DH table for PUMA560 is shownd in the table below.
-
+a_{3}C_{23}+a_{2}C_{2}
 Link | $a_{i}$ | $\alpha_{i}$ | $d_{i}$ | $\theta_{i}$
 -----| --------|--------------|---------|-----------
 1 | 0 | $\pi /2$ | 0 | $\theta^*_{1}$
@@ -79,3 +79,11 @@ where $S_{i}=\sin (\theta_{i}), C_{i}=\cos (\theta_{i})$.
 As joints 2 and 3 are parallel and the matrix product of $A_{2}$ and $A_{3}$ involves sines and cosines of the sum of $\theta_{2}$ and $\theta_{3}$, we will replace $A_{2}$ and $A_{3}$ with the product $A_{23}$ before multiplying the matrices to obtain $A_{6}$.
 
 $$A_{23} = \begin{bmatrix}C_{23} & 0 & -S_{23} & a_{3}C_{23}+a_{2}C_{2} \\\ S_{23} & 0 & C_{23} & a_{3}S_{23}+a_{2}S_{2} \\\ 0 & -1 & 0 & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{16}$$
+
+where $S_{23}=\sin (\theta_{2} + \theta_{3}), C_{23}=\cos (\theta_{2} + \theta_{3})$.
+
+## Position and Orientation of the Manipulator
+
+$T_{6} can be expressed as the product of $A_{1}A_{23}A_{4}A_{5}A_{6}$, namly,
+
+$$T_{6} = A_{1}A_{23}A_{4}A_{5}A_{6}\tag{17}$$
