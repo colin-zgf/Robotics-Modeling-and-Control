@@ -190,11 +190,11 @@ $$r\sin (\theta_{1} - \phi)= \frac{d_{3}}{r}\tag{43}$$
 
 and
 
-$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + sin^{-1}\frac{d_{3}}{r}\tag{44}$$
+**$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + sin^{-1}\frac{d_{3}}{r}\tag{44}$$**
 
 The $sin^{-1}$ function is double valued so that a second solution exists for $\theta_{1}$:
 
-$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$
+**$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$**
 
 - **$\theta_{2}$ Calculation**
 
@@ -232,13 +232,16 @@ $$\psi = cos^{-1}\frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{
 
 then
 
-$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} + \psi\tag{54}$$
+**$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} + \psi\tag{54}$$**
 
 where $V_{114} = C_{1}p_{x} + S_{1}p_{y}$ (here need to do some simple calculation). As the $cos^{-1}$ function is double valued so that a second solution exists for $\theta_{2}$:
 
-$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} - \psi\tag{55}$$
+**$$\theta_{2} = tan^{-1}\frac{p_{z}}{V_{114}} - \psi\tag{55}$$**
 
 - **$\theta_{3}$ Calculation**
+
+Next, equating $V_{2}$ to $U_{3}$, we obtain
+
 
 
 - **$\theta_{4}$ Calculation**
