@@ -144,7 +144,7 @@ $$V_{1j} = \begin{bmatrix}C_{1}x + S_{1}y \\\ z \\\ S_{1}x - C_{1}y \\\ w\end{bm
 
 Then premultiplying $V_{1j}$ by $A_{2}^{-1}$ we obtain $V_{2j}$
 
-$$V_{2j} = \begin{bmatrix}V_{21} = C_{2}V_{11} + S_{2}z - a_{2}w \\\ V_{22} = -S_{2}V_{11} + C_{2}z \\\ V_{13} &\\\ w\end{bmatrix}\tag{33}$$
+$$V_{2j} = \begin{bmatrix}V_{21} = C_{2}V_{11} + S_{2}z - a_{2}w \\\ V_{22} = -S_{2}V_{11} + C_{2}z \\\ V_{13} \\\ w\end{bmatrix}\tag{33}$$
 
 Premultiplying $V_{1j}$ by $A_{23}^{-1}$ we obtain $V_{3j}$
 
@@ -156,7 +156,7 @@ $$V_{4j} = \begin{bmatrix}V_{41} = C_{4}V_{31} + S_{4}V_{32} \\\ V_{42} = V_{33}
 
 Finally, premultiplying $V_{4j}$ by $A_{5}^{-1}$ we obtain $V_{5j}$
 
-$$V_{5j} = \begin{bmatrix}V_{51} = C_{5}V_{41} + S_{5}V_{42} \\\ -V_{43} \\\ V_{53} = -S_{5}V_{41} + C_{5}V_{42} &\\\ w\end{bmatrix}\tag{36}$$
+$$V_{5j} = \begin{bmatrix}V_{51} = C_{5}V_{41} + S_{5}V_{42} \\\ -V_{43} \\\ V_{53} = -S_{5}V_{41} + C_{5}V_{42} \\\ w\end{bmatrix}\tag{36}$$
 
 The solution is now obtained’by solving the six equations
 
@@ -178,7 +178,7 @@ $$S_{1}p_{x} - C_{1}p_{y} = d_{3}\tag{40}$$
 
 Let:
 
-$$r\sin (\phi)=p_{y}, \quad -r\cos (\phi)=p_{x} \quad with \qquad r > 0\tag{41}$$
+$$r\sin (\phi)=p_{y}, \quad r\cos (\phi)=p_{x} \quad with \quad r > 0\tag{41}$$
 
 Then,
 
@@ -216,7 +216,7 @@ $$C_{2}V_{114} + S_{2}p_{z} = \frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^
 
 Let:
 
-$$r\sin (\phi)=p_{z}, \quad -r\cos (\phi)=V_{114} \quad with \qquad r > 0\tag{50}$$
+$$r\sin (\phi)=p_{z}, \quad r\cos (\phi)=V_{114} \quad with \quad r > 0\tag{50}$$
 
 Then,
 
@@ -242,7 +242,25 @@ where $V_{114} = C_{1}p_{x} + S_{1}p_{y}$ (here need to do some simple calculati
 
 Next, equating $V_{2}$ to $U_{3}$, we obtain
 
+$$\begin{bmatrix} = C_{2}V_{11} + S_{2}z - a_{2}w \\\ -S_{2}V_{11} + C_{2}z \\\ V_{13} \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{312} & U_{313} & -S_{3}d_{4} + C_{3}a_{3} \\\ ? & U_{322} & U_{323} & C_{3}d_{4} + S_{3}a_{3} \\\ ? & -U_{422} & -U_{423} & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{56}$$
 
+The only two possible element equations that we might solve to obtain a solution for $\theta_{3}$ are the (1, 4) and (2, 4) elements. Equating these elements, we obtain
+
+$$V_{214} = -S_{3}d_{4} + C_{3}a_{3} \\\ V_{224} = C_{3}d_{4} + S_{3}a_{3}\tag{57}$$
+
+Let:
+
+$$r\sin (\phi)=a_{3}, \quad r\cos (\phi)=d_{4} \quad with \qquad r > 0\tag{58}$$
+
+Then,
+
+$$r = \sqrt{a_{3}^{2} + d_{4}^{2}} \quad and \quad \phi = tan^{-1}\frac{a_{3}}{d_{4}}\tag{59}$$
+
+Making the trigonometric substitution above, one obtains
+
+$$r\tan (\phi - \theta_{3})= \frac{V_{214}}{V_{224}}\tag{60}$$
+
+**$$\theta_{3} = tan^{-1}\frac{a_{3}}{d_{4}} - tan^{-1}\frac{C_{2}V_{114} + S_{2}p_{z} -a_{2}}{C_{2}p_{z} - S_{2}V_{114}}\tag{61}$$**
 
 - **$\theta_{4}$ Calculation**
 
