@@ -16,7 +16,7 @@ This can be easily verified through augmented matrix:
 
 ### **Proof:**
 
-$$\begin{bmatrix} R_{3 \times 3} & p & I_{3 \times 3} 0 \\\ 0_{3 \times 3} & 1 & 0_{3 \times 3} & 1\end{bmatrix}$\tag{3}$
+$$\begin{bmatrix} R_{3 \times 3} & p & I_{3 \times 3} 0 \\\ 0_{3 \times 3} & 1 & 0_{3 \times 3} & 1\end{bmatrix}\tag{3}$$
 
 Multiplying $R^{-1}$ on the first row leads to
 
@@ -34,7 +34,7 @@ Since $R^{-1} = R^{T}$, the product $-R^{-1}p$ is just
 
 $$\begin{bmatrix}-p \cdot n \\\ -p \cdot o \\\ -p \cdot a\end{bmatrix}\tag{7}$$
 
-# Kinematcis with Spherical Wrist
+## Kinematcis with Spherical Wrist
 
 The homogneous transformation matrix describing position and orientation of the end of a six-degrees-of-freedom manipulator is given by
 
