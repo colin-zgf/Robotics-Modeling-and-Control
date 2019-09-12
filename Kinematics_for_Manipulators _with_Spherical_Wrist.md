@@ -59,3 +59,17 @@ Link | $a_{i}$ | $\alpha_{i}$ | $d_{i}$ | $\theta_{i}$
 6 | 0 | 0 | 0 | $\theta^*_{6}$
 
 where $*$ means variable.
+
+Based on the DH table, the corresponding $A$ matrices are
+
+$$A_{6} = \begin{bmatrix}C_{6} & -S_{6} & 0 & 0 \\\ S_{6} & C_{6} & 0 & 0 \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{10}$$
+
+$$A_{5} = \begin{bmatrix}C_{5} & 0 & -S_{5} & 0 \\\ S_{5} & 0 & C_{5} & 0 \\\ 0 & -1 & 0 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{11}$$
+
+$$A_{4} = \begin{bmatrix}C_{5} & 0 & S_{4} & 0 \\\ S_{4} & 0 & -C_{4} & 0 \\\ 0 & 1 & 0 & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{12}$$
+
+$$A_{3} = \begin{bmatrix}C_{3} & 0 & -S_{3} & a_{3}C_{3} \\\ S_{3} & 0 & C_{3} & a_{3}S_{3} \\\ 0 & -1 & 0 & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{13}$$
+
+$$A_{2} = \begin{bmatrix}C_{2} & -S_{2} & 0 & a_{2}C_{2} \\\ S_{2} & C_{2} & 0 & a_{2}S_{2} \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{14}$$
+
+$$A_{1} = \begin{bmatrix}C_{1} & 0 & S_{1} & 0 \\\ S_{1} & 0 & -C_{1} & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{15}$$
