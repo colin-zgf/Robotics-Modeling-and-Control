@@ -162,6 +162,8 @@ The solution is now obtained’by solving the six equations
 
 $$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} = U_{5} \\\ V_{5} = U_{6}\tag{37}$$
 
+### $\theta_{1}$ Calculation
+
 We first equate $V_{0}$ to $U_{1}$:
 
 $$\begin{bmatrix}x \\\ y \\\ z \\\ w\end{bmatrix} = \begin{bmatrix}? & C_{1}U_{212}-S_{1}U_{422} & C_{1}U_{213} - S_{1}U_{423} & C_{1}U_{214} + S_{1}d_{3} \\\ ? & S_{1}U_{212} + C_{1}U_{422} & S_{1}U_{213} + C_{1}U_{423} & S_{1}U_{214} - C_{1}d_{3} \\\ ? & U_{222} & U_{223} & U_{224} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{38}$$
@@ -181,3 +183,25 @@ $$r\sin (\phi)=p_{y}, \quad -r\cos (\phi)=p_{x} \quad with \qquad r > 0\tag{41}$
 Then,
 
 $$r = \sqrt{p_{x}^{2} + p_{y}^{2}} \quad and \quad \phi = tan^{-1}\frac{p_{y}}{p_{x}}\tag{42}$$
+
+Based on Eqn. (40), we obtain
+
+$$r\sin (\theta_{1} - \phi)= \frac{d_{3}}{r}\tag{43}$$
+
+and
+
+$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + sin^{-1}\frac{d_{3}}{r}\tag{44}$$
+
+The $sin^{-1}$ function is double valued so that a second solution exists for $\theta_{1}$:
+
+$$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{45}$$
+
+### $\theta_{2}$ Calculation
+
+### $\theta_{3}$ Calculation
+
+### $\theta_{4}$ Calculation
+
+### $\theta_{5}$ Calculation
+
+### $\theta_{6}$ Calculation
