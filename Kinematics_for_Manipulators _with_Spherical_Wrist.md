@@ -140,28 +140,28 @@ where $V_{0jk}$ are obtained by substituting the components of the **$n$, $o$, $
 
 Premultiplying $T_{6}$ by $A_{1}^{-1}$ we obtain $V_{1j}$
 
-$$V_{1j} = \begin{bmatrix}C_{1}x + S_{1}y & z & S_{1}x - C_{1}y & w\end{bmatrix}\tag{32}$$
+$$V_{1j} = \begin{bmatrix}C_{1}x + S_{1}y \\\ z \\\ S_{1}x - C_{1}y \\\ w\end{bmatrix}\tag{32}$$
 
 Then premultiplying $V_{1j}$ by $A_{2}^{-1}$ we obtain $V_{2j}$
 
-$$V_{2j} = \begin{bmatrix}V_{21} = C_{2}V_{11} + S_{2}z - a_{2}w & V_{22} = -S_{2}V_{11} + C_{2}z & V_{13} & w\end{bmatrix}\tag{33}$$
+$$V_{2j} = \begin{bmatrix}V_{21} = C_{2}V_{11} + S_{2}z - a_{2}w \\\ V_{22} = -S_{2}V_{11} + C_{2}z \\\ V_{13} &\\\ w\end{bmatrix}\tag{33}$$
 
 Premultiplying $V_{1j}$ by $A_{23}^{-1}$ we obtain $V_{3j}$
 
-$$V_{3j} = \begin{bmatrix}V_{31} = C_{23}V_{11} + S_{23}z - (a_{2}C_{3} + a_{3})w & V_{32} = -V_{13} + d_{3}w & V_{33} = -S_{23}V_{11} + C_{23}z - a_{2}S_{3}w & w\end{bmatrix}\tag{34}$$
+$$V_{3j} = \begin{bmatrix}V_{31} = C_{23}V_{11} + S_{23}z - (a_{2}C_{3} + a_{3})w \\\ V_{32} = -V_{13} + d_{3}w \\\ V_{33} = -S_{23}V_{11} + C_{23}z - a_{2}S_{3}w \\\ w\end{bmatrix}\tag{34}$$
 
 Premultiplying $V_{3j}$ by $A_{4}^{-1}$ we obtain $V_{4j}$
 
-$$V_{4j} = \begin{bmatrix}V_{41} = C_{4}V_{31} + S_{4}V_{32} & V_{42} = V_{33} - d_{4}w & V_{43} = S_{4}V_{31} - C_{4}V_{32} & w\end{bmatrix}\tag{35}$$
+$$V_{4j} = \begin{bmatrix}V_{41} = C_{4}V_{31} + S_{4}V_{32} \\\ V_{42} = V_{33} - d_{4}w \\\ V_{43} = S_{4}V_{31} - C_{4}V_{32} \\\ w\end{bmatrix}\tag{35}$$
 
 Finally, premultiplying $V_{4j}$ by $A_{5}^{-1}$ we obtain $V_{5j}$
 
-$$V_{5j} = \begin{bmatrix}V_{51} = C_{5}V_{41} + S_{5}V_{42} & -V_{43} & V_{53} = -S_{5}V_{41} + C_{5}V_{42} & w\end{bmatrix}\tag{35}$$
+$$V_{5j} = \begin{bmatrix}V_{51} = C_{5}V_{41} + S_{5}V_{42} \\\ -V_{43} \\\ V_{53} = -S_{5}V_{41} + C_{5}V_{42} &\\\ w\end{bmatrix}\tag{36}$$
 
 The solution is now obtained’by solving the six equations
 
-$$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} = U_{5} \\\ V_{5} = U_{6}\tag{36}$$
+$$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} = U_{5} \\\ V_{5} = U_{6}\tag{37}$$
 
 We first equate $V_{0}$ to $U_{1}$:
 
-$$\begin{bmatrix}x \\\ y \\\ z \\\ w\end{bmatrix} = \begin{bmatrix}? & C_{1}U_{212}-S_{1}U_{422} & C_{1}U_{213} - S_{1}U_{423} & C_{1}U_{214} + S_{1}d_{3} \\\ ? & S_{1}U_{212} + C_{1}U_{422} & S_{1}U_{213} + C_{1}U_{423} & S_{1}U_{214} - C_{1}d_{3} \\\ ? & U_{222} & U_{223} & U_{224} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{37}$$
+$$\begin{bmatrix}x \\\ y \\\ z \\\ w\end{bmatrix} = \begin{bmatrix}? & C_{1}U_{212}-S_{1}U_{422} & C_{1}U_{213} - S_{1}U_{423} & C_{1}U_{214} + S_{1}d_{3} \\\ ? & S_{1}U_{212} + C_{1}U_{422} & S_{1}U_{213} + C_{1}U_{423} & S_{1}U_{214} - C_{1}d_{3} \\\ ? & U_{222} & U_{223} & U_{224} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{38}$$
