@@ -125,3 +125,7 @@ $$U_{1} = \begin{bmatrix}? & C_{1}U_{212}-S_{1}U_{422} & C_{1}U_{213} - S_{1}U_{
 As the elements of $T_{6}$ are numeric values, each column can be represented by a general column
 
 $$\begin{bmatrix}x & y & z & w\end{bmatrix}^{T}\tag{29}$$
+
+where $x$, $y$, and $z$ represent the numeric values of the components of the **$n$, $o$, $a$** and **$p$** vectors if the first, second, third, or fourth columns are specified respectively. If one of the first three columns is specified, then $w$ = 0; otherwise, $w$ = 1. We shall refer to the elements of the $V_{i}$ matrices by three subscripts $V_{ijk}$, where $i$ refers to the $i$th $V$ matrix (as in the case of the $U_{i}$ matrices). The second two subscripts, $jk$, refer to the $j$th row and $k$th column of the particular matrix. We set:
+
+$$T_{6} = V_{0} = U_{1} \\\ A_{1}^{-1}T_{6} = V_{1} = U_{2} \\\ A_{2}^{-1}V_{1} = V_{2} = U_{3} \\\ A_{23}^{-1}V_{1} = V_{3} = U_{4} \\\ A_{4}^{-1}V_{3} = V_{4} = U_{5} \\\ A_{5}^{-1}V_{4} = V_{5} = U_{6}\tag{30}$$
