@@ -200,7 +200,7 @@ $$\theta_{1} = tan^{-1}\frac{p_{y}}{p_{x}} + \pi - sin^{-1}\frac{d_{3}}{r}\tag{4
 
 Next, equating $V_{1}$ to $U_{2}$, we obtain
 
-$$\begin{bmatrix}C_{1}x + S_{1}y \\\ z \\\ S_{1}x - C_{1}y \\\ w\end{bmatrix} = \begin{bmatrix}C_{23}U_{411} - S_{23}U_{521} & C_{23}U_{412}-S_{23}U_{522} & C_{23}U_{413} - S_{23}C_{5} & -S_{23}d_{4} + C_{23}a_{3} + C_{2}a_{2} \\\ S_{23}U_{411}+C_{23}U_{521} & S_{23}U_{412} + C_{23}U_{522} & S_{23}U_{413} + C_{23}C_{5} & C_{23}d_{4} + S_{23}a_{3} + S_{2}a_{2} \\\ -U_{421} & -U_{422} & -U_{423} & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{46}$$
+$$\begin{bmatrix}C_{1}x + S_{1}y \\\ z \\\ S_{1}x - C_{1}y \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{212} & U_{213} & -S_{23}d_{4} + C_{23}a_{3} + C_{2}a_{2} \\\ ? & U_{222} & U_{232} & C_{23}d_{4} + S_{23}a_{3} + S_{2}a_{2} \\\ ? & -U_{422} & -U_{423} & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{46}$$
 
 The only two possible element equations that we might solve to obtain a solution for $\theta_{2}$ are the (1, 4) and (2, 4) elements. Equating these elements, we obtain
 
@@ -224,11 +224,11 @@ $$r = \sqrt{V_{114}^{2} + p_{z}^{2}} \quad and \quad \phi = tan^{-1}\frac{p_{z}}
 
 Based on Eqn. (50), we obtain
 
-$$\cos (\theta_{2} - \phi)= \frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}}{2a_{2}r}\tag{52}$$
+$$\cos (\theta_{2} - \phi)= \frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}r}\tag{52}$$
 
 If the value of the expression defining the cosine is greater than 1, the position defined is beyond the reach of the manipulator. If the value of the expression is less than 1, then the position is inside the minimum position that the manipulator can reach. Defining
 
-$$\psi = cos^{-1}\frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}}{2a_{2}r}\tag{53}$$
+$$\psi = cos^{-1}\frac{a_{2}^{2} - d_{4}^{2} - a_{3}^{2} + V_{114}^{2} + p_{z}^{2}}{2a_{2}r}\tag{53}$$
 
 then
 
