@@ -162,7 +162,7 @@ The solution is now obtained’by solving the six equations
 
 $$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} = U_{5} \\\ V_{5} = U_{6}\tag{37}$$
 
-### $\theta_{1}$ Calculation
+- $\theta_{1}$ Calculation
 
 We first equate $V_{0}$ to $U_{1}$:
 
