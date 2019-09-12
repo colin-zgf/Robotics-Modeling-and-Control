@@ -84,6 +84,10 @@ where $S_{23}=\sin (\theta_{2} + \theta_{3}), C_{23}=\cos (\theta_{2} + \theta_{
 
 ## Position and Orientation of the Manipulator
 
-$T_{6} can be expressed as the product of $A_{1} A_{23} A_{4} A_{5} A_{6}$, namly,
+$T_{6} can be expressed as the product of $A_{1}$, $A_{23}$, $A_{4}$, $A_{5}$, and $A_{6}$, namly,
 
 $$T_{6} = A_{1}A_{23}A_{4}A_{5}A_{6}\tag{17}$$
+
+We will evaluate this matrix from right to left, making use of intermediate product matrices $U_{i}$, which we will also need for the solution and the computation of the Jacobian, as follows:
+
+$$U_{6} = A_{6} \\\ U_{5} = A_{5}U_{6}tag{17}$$
