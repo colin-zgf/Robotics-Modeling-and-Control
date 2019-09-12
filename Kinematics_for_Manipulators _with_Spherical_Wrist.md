@@ -176,4 +176,4 @@ $$S_{1}p_{x} - C_{1}p_{y} = d_{3}\tag{40}$$
 
 Let:
 
-$$r\sin (\phi)=p_{y}, -r\cos (\phi)=p_{x}   with r > 0\tag{40}$$
+$$r\sin (\phi)=p_{y} \: -r\cos (\phi)=p_{x} \: with r > 0\tag{40}$$
