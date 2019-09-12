@@ -165,3 +165,15 @@ $$V_{0} = U_{1} \\\ V_{1} = U_{2} \\\ V_{2} = U_{3} \\\ V_{3} = U_{4} \\\ V_{4} 
 We first equate $V_{0}$ to $U_{1}$:
 
 $$\begin{bmatrix}x \\\ y \\\ z \\\ w\end{bmatrix} = \begin{bmatrix}? & C_{1}U_{212}-S_{1}U_{422} & C_{1}U_{213} - S_{1}U_{423} & C_{1}U_{214} + S_{1}d_{3} \\\ ? & S_{1}U_{212} + C_{1}U_{422} & S_{1}U_{213} + C_{1}U_{423} & S_{1}U_{214} - C_{1}d_{3} \\\ ? & U_{222} & U_{223} & U_{224} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{38}$$
+
+The only two possible element equations that we might solve to obtain a solution for $\theta_{1}$ are the (1, 4) and (2, 4) elements. Equating these elements, we obtain
+
+$$p_{x} = C_{1}U_{214} + S_{1}d_{3} \\\ p_{y} = S_{1}U_{214} - C_{1}d_{3}\tag{39}$$
+
+Multiplying the first equation by $S_{1}$, the second by $C_{1}$, and subtracting the second from the first we eliminate $U_{214}$ to obtain
+
+$$S_{1}p_{x} - C_{1}p_{y} = d_{3}\tag{40}$$
+
+Let:
+
+$$r\sin (\phi)=p_{y}, -r\cos (\phi)=p_{x}   with r > 0\tag{40}$$
