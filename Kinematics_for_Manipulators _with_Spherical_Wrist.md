@@ -8,4 +8,4 @@ $$A = \begin{bmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y} & p
 
 The corresponding inverse $A^{-1}$ is given by:
 
-$$A^{-1} = \begin{bmatrix}n_{x} & n_{y} & n_{z} & -**p \cdot n** \\\ o_{x} & o_{y} & o_{z} & -**p \cdot o** \\\ a_{x} & a_{y} & a_{z} & -**p \cdot a** \\\ 0 & 0 & 0 & 1\end{bmatrix}$$
+$$A^{-1} = \begin{bmatrix}n_{x} & n_{y} & n_{z} & -p \cdot n \\\ o_{x} & o_{y} & o_{z} & -p \cdot o \\\ a_{x} & a_{y} & a_{z} & -p \cdot a \\\ 0 & 0 & 0 & 1\end{bmatrix}$$
