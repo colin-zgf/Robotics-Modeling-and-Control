@@ -4,4 +4,4 @@ The kinematics calculation is based on the homogeneous transformation representa
 
 Given a transformation matrix:
 
-$$A = \begin{vmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\ n_{y} & o_{y} & a_{y} & p_{y} \\ n_{z} & o_{z} & a_{z} & p_{z} \\ 0 & 0 & 0 & 1\end{vmatrix}$$
+$$A = \begin{vmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y} & p_{y} \\\ n_{z} & o_{z} & a_{z} & p_{z} \\\ 0 & 0 & 0 & 1\end{vmatrix}$$
