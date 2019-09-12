@@ -266,7 +266,7 @@ $$\theta_{3} = tan^{-1}\frac{a_{3}}{d_{4}} - tan^{-1}\frac{C_{2}V_{114} + S_{2}p
 
 Next, equating $V_{3}$ to $U_{4}$, we obtain
 
-$$\begin{bmatrix} = V_{31} \\\ V_{32} \\\ V_{33} \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{412} & -C_{4}S_{5} & 0 \\\ ? & U_{422} & -S_{4}S_{5} & 0 \\\ ? & -U_{522} & C_{5} & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{62}$$
+$$\begin{bmatrix}V_{31} \\\ V_{32} \\\ V_{33} \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{412} & -C_{4}S_{5} & 0 \\\ ? & U_{422} & -S_{4}S_{5} & 0 \\\ ? & -U_{522} & C_{5} & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{62}$$
 
 We may obtain expressions for the sine and cosine of $\theta_{4}$ as
 
@@ -274,11 +274,38 @@ $$S_{4} = -\frac{1}{S_{5}}V_{323} \\\ C_{4} = -\frac{1}{S_{5}}V_{313}\tag{63}$$
 
 Once again there are two solutions for $\theta_{4}$: one if $sin (\theta_{5})$ is positive and another if it is negative. These two solutions are separated by a singularity when $sin (\theta_{5})$ = 0:
 
-$$\theta_{4} = tan^{-1}\frac{-V_{323}}{-V_{313}} \quad if \quad S_{5}>0, \\\ theta_{4} = tan^{-1}\frac{V_{323}}{V_{313}} \quad if \quad S_{5}<0 \\\ theta_{4} \quad undefined \quad if \quad S_{5}=0\tag{64}$$
+$$\theta_{4} = tan^{-1}\frac{-V_{323}}{-V_{313}} \quad if \quad S_{5}>0, \\\ \theta_{4} = tan^{-1}\frac{V_{323}}{V_{313}} \quad if \quad S_{5}<0 \\\ \theta_{4} \quad undefined \quad if \quad S_{5}=0\tag{64}$$
 
+In order to evaluate $V_{323}$ and $V_{313}$, we make use of their recursive definition to obtain
+
+$$V_{323} = C_{1}a_{y} - S_{1}a_{x}, \\\ V_{113} = C_{1}a_{x} + S_{1}a_{y}, \\\ V_{313} = C_{23}V_{113} + S_{23}a_{z}\tag{65}$$
 
 - **$\theta_{5}$ Calculation**
 
+Next, equating $V_{4}$ to $U_{5}$, we obtain
+
+$$\begin{bmatrix}C_{4}V_{31} + S_{4}V_{32} \\\ V_{33} - d_{4}w \\\ S_{4}V_{31} - C_{4}V_{32} \\\ w\end{bmatrix} = \begin{bmatrix}? & U_{512} & -S_{5} & 0 \\\ ? & U_{522} & C_{5} & 0 \\\ ? & -C_{6} & 0 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{66}$$
+
+Then,
+
+$$S_{5} = -C_{4}V_{313} - S_{4}V_{323} \\\ C_{5} = -S_{23}V_{113} - C_{23}a_{z}\tag{67}$$
+
+where $V_{313}$ and $V_{323}$ are defined above and
+
+$$\theta_{5} = tan^{-1}\frac{S_{5}}{C_{5}}\tag{68}$$
 
 - **$\theta_{6}$ Calculation**
 
+Finally, equating $V_{5}$ to $U_{6}$, we obtain
+
+$$\begin{bmatrix}C_{5}V_{41} + S_{5}V_{42} \\\ -V_{43} \\\ -S_{5}V_{41} + C_{5}V_{42} \\\ w\end{bmatrix} = \begin{bmatrix}? & -S_{6} & 0 & 0 \\\ ? & C_{6} & 0 & 0 \\\ ? & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{69}$$
+
+Equations for $S_{6}$ and $C_{6}$ are obtained directly by equating the first two elements of the second column:
+
+$$S_{6} = -C_{5}V_{412} - S_{5}V_{422} \\\ C_{6} = -V_{432}\tag{70}$$
+
+Evaluating the expressions in the right-hand side, we obtain
+
+$$V_{412} = C_{4}V_{312} - S_{4}V_{132} \\\ V_{422} = V_{332} \\\ V_{432} = S_{4}V_{312} + C_{4}V_{132} \\\ V_{312} = C_{23}V_{112} + S_{23}o_{z} \\\ V_{332} = -S_{23}V_{112} + C_{23}o_{z} \\\ V_{132} = S_{1}o_{x} - C_{1}o_{y} \\\ V_{112} = C_{1}o_{x} + S_{1}o_{y}\tag{71}$$
+
+$$\theta_{6} = tan^{-1}\frac{S_{6}}{C_{6}}\tag{72}$$
