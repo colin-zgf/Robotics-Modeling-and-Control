@@ -66,10 +66,16 @@ $$A_{6} = \begin{bmatrix}C_{6} & -S_{6} & 0 & 0 \\\ S_{6} & C_{6} & 0 & 0 \\\ 0 
 
 $$A_{5} = \begin{bmatrix}C_{5} & 0 & -S_{5} & 0 \\\ S_{5} & 0 & C_{5} & 0 \\\ 0 & -1 & 0 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{11}$$
 
-$$A_{4} = \begin{bmatrix}C_{5} & 0 & S_{4} & 0 \\\ S_{4} & 0 & -C_{4} & 0 \\\ 0 & 1 & 0 & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{12}$$
+$$A_{4} = \begin{bmatrix}C_{4} & 0 & S_{4} & 0 \\\ S_{4} & 0 & -C_{4} & 0 \\\ 0 & 1 & 0 & d_{4} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{12}$$
 
 $$A_{3} = \begin{bmatrix}C_{3} & 0 & -S_{3} & a_{3}C_{3} \\\ S_{3} & 0 & C_{3} & a_{3}S_{3} \\\ 0 & -1 & 0 & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{13}$$
 
 $$A_{2} = \begin{bmatrix}C_{2} & -S_{2} & 0 & a_{2}C_{2} \\\ S_{2} & C_{2} & 0 & a_{2}S_{2} \\\ 0 & 0 & 1 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{14}$$
 
 $$A_{1} = \begin{bmatrix}C_{1} & 0 & S_{1} & 0 \\\ S_{1} & 0 & -C_{1} & 0 \\\ 0 & 1 & 0 & 0 \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{15}$$
+
+where $S_{i}=\sin (\theta_{i}), C_{i}=\cos (\theta_{i})$.
+
+As joints 2 and 3 are parallel and the matrix product of $A_{2}$ and $A_{3}$ involves sines and cosines of the sum of $\theta_{2}$ and $\theta_{3}$, we will replace $A_{2}$ and $A_{3}$ with the product $A_{23}$ before multiplying the matrices to obtain $A_{6}$.
+
+$$A_{23} = \begin{bmatrix}C_{23} & 0 & -S_{23} & a_{3}C_{23}+a_{2}C_{2} \\\ S_{23} & 0 & C_{23} & a_{3}S_{23}+a_{2}S_{2} \\\ 0 & -1 & 0 & d_{3} \\\ 0 & 0 & 0 & 1\end{bmatrix}\tag{16}$$
