@@ -7,7 +7,7 @@ If you have any questions, please leave a message or send the email to
 
 ## Very Important Note
 
-**If you would like to see all formulas in all .md file, please add the MathJax Plugin. The steps to add the plugin is search the [Chrome app store](https://chrome.google.com/webstore/category/extensions) and type 'mathjax' in the 'search' section. Then add MathJax Plugin for Github**
+**If you would like to see all formulas in all .md file, please add the MathJax Plugin. The steps to add the plugin is to search the [Chrome app store](https://chrome.google.com/webstore/category/extensions) and type 'mathjax' in the 'search' section. Then add MathJax Plugin for Github**
 
 ## Installation
 
