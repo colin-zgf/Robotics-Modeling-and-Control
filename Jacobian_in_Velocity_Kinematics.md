@@ -30,7 +30,7 @@ z_{i-1}& \text{for revolute joint i}\\\
 0& \text{for prismatic joint i}
 \end{cases}\tag{3}$$
 
-So if $$J=(J_{1}, J_{2},...,J_{n})$$, then the $i$th column of $J_{i}$ for revolute joint is given by
+So if $J=(J_{1}, J_{2},...,J_{n})$, then the $i$th column of $J_{i}$ for revolute joint is given by
 
 $$J_{i}=
 \begin{cases}
