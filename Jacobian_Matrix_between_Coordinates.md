@@ -42,13 +42,13 @@ Based on this,
 
 $$\dot{p^{B}}=-R_{A}^{B}S(p^{A})(R_{A}^{B})^{T}\omega_{A}^{B} + R_{A}^{B}v^{A}\tag{7}$$
 
-$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})R_{B}^{A}\omega_{A}^{B} + R_{A}^{B}v_{A}\tag{8}$$
+$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})R_{B}^{A}\omega_{A}^{B} + R_{A}^{B}v^{A}\tag{8}$$
 
-$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})\omega_{A} + R_{A}^{B}v_{A}\tag{9}$$
+$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})\omega^{A} + R_{A}^{B}v^{A}\tag{9}$$
 
 Namely,
 
-$$v^{B}=-R_{A}^{B}S(p^{A})\omega_{A} + R_{A}^{B}v_{A}\tag{9}$$
+$$v^{B}=-R_{A}^{B}S(p^{A})\omega^{A} + R_{A}^{B}v^{A}\tag{9}$$
 
 In sum, if the forward homogeneous transformation matrix which can be calculated through forward kinematics is given by:
 
