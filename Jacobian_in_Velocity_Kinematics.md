@@ -63,3 +63,5 @@ Finally, the mapping from the end-effector to the base frame is given
 $$\begin{bmatrix}v_{N}^{0} \\\ \omega_{N}^{0} \end{bmatrix} = \begin{bmatrix}R_{N}^{0} & 0_{3\times 3} \\\ 0_{3\times 3} & R_{N}^{0}\end{bmatrix}J(q)\dot{q}\tag{9}$$
 
 The $i$th column $J_{i}$ of $J(q)$ is given as expression (7) for revolute joint or (8) for prismatic joint.
+
+One simple code for [Jacobian matrix calculation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/jacobian_matrix.m) has already been uploaded.
