@@ -22,11 +22,13 @@ The following are included:
 - [Levenberg-Marquardt Algorithm in Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Levenberg-Marquardt_Algorithm_in_Inverse_Kinematics.md)
 - [Kinematics for Manipulators](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Kinematics_for_Manipulators%20_with_Spherical_Wrist.md)
 - [Walking-Robots](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Walking_Robots.md)
+- [Jacobian in Velocity Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/Jacobian_in_Velocity_Kinematics.md)
 
 ## Codes
 
 - [One-Leg Motion](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/SImpleWalkingRobot.m)
 - [Four-Leg Motion](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/MotionOfFourLegs.m)
+- [Jacobian matrix calculation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/jacobian_matrix.m)
 
 ## Reference
 - [Robotics Vision and Control Fundamental Algorithms in Matlab](https://github.com/ErlangZ/Ebooks/blob/master/Robotics%2C%20vision%20and%20control%20fundamental%20algorithms%20in%20MATLAB%26amp%3Breg%3B.pdf)
