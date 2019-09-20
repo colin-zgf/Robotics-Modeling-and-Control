@@ -36,7 +36,7 @@ $$\dot{p^{B}}=-S(p^{B})\omega_{A}^{B} + v_{A}^{B}\tag{5}$$
 
 It is easy to see that:
 
-$$S(p^{A}) = S(R_{A}^{B}^{T}p^{B}) = R_{A}^{B}^{T}S(p^{B})R_{A}^{B}\tag{6}$$
+$$S(p^{A}) = S((R_{A}^{B})^{T}p^{B}) = (R_{A}^{B})^{T}S(p^{B})R_{A}^{B}\tag{6}$$
 
 Based on this,
 
