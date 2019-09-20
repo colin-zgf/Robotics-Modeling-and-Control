@@ -22,7 +22,7 @@ where $t_{B}^{A}$ is the translation from $B$ to $A$.
 
 Assume a point $p^{A}$ in frame **$A$** with some translation $t$, then the point in frame **$B$** can be written as
 
-$$p^{B}=R_{A}^{B}p^{A} + t_{B}^{A}\tag{3}$$
+$$p^{B}=R_{A}^{B}p^{A} + t_{A}^{B}\tag{3}$$
 
 The corresponding velocy is
 
