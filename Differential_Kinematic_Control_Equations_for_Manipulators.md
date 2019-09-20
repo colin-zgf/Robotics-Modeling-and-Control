@@ -87,10 +87,10 @@ $$\begin{bmatrix}T_{N}d_{x} \\\ T_{N}d_{y} \\\ T_{N}d_{z} \\\ T_{N}\delta_{x} \\
 
 Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
 
-For revolute, each column is the form of:
+For revolute, the jth column is the form of:
 
 $$\begin{bmatrix}p_{x}n_{y} - n_{x}p_{y} \\\ p_{x}o_{y} - o_{x}p_{y} \\\ p_{x}a_{y} - a_{x}p_{y} \\\  n_{z} \\\ o_{z} \\\ a_{z}\end{bmatrix}$$
 
-For prismatic, each column is the form of:
+For prismatic, the jthh column is the form of:
 
 $$\begin{bmatrix}n_{z} \\\ o_{z} \\\ a_{z} \\\  0 \\\ 0 \\\ 0\end{bmatrix}$$
