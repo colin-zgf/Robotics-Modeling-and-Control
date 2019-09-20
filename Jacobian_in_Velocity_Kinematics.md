@@ -18,6 +18,6 @@ The $i$th column of $J_{v_{i}}$ is
 
 $$f(x)=
 \begin{cases}
-z_{i-1} \times (o_{n} - o_{i-1})& \text{for revolute joint i}\\
+z_{i-1} \times (o_{n} - o_{i-1})& \text{for revolute joint i}\\\ 
 z_{i-1}& \text{for prismatic joint i}
 \end{cases}\tag{2}$$
