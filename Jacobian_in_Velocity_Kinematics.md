@@ -50,10 +50,14 @@ $$U_{j} = \begin{pmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y}
 
 Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
 
-For revolute, each column is the form of:
+For revolute, the jth column is the form of:
 
 $$\begin{bmatrix}p_{x}n_{y} - n_{x}p_{y} \\\ p_{x}o_{y} - o_{x}p_{y} \\\ p_{x}a_{y} - a_{x}p_{y} \\\  n_{z} \\\ o_{z} \\\ a_{z}\end{bmatrix}\tag{7}$$
 
-For prismatic, each column is the form of:
+For prismatic, the jth column is the form of:
 
 $$\begin{bmatrix}n_{z} \\\ o_{z} \\\ a_{z} \\\  0 \\\ 0 \\\ 0\end{bmatrix}\tag{8}$$
+
+Finally, the mapping from the end-effector to the base frame is given
+
+$$\begin{bmatrix}v_{N}^{0} \\\ \omega_{N}^{0} \end{bmatrix} = \begin{bmatrix}R_{N}^{0} & 0_{3\times 3} \\\ 0_{3\times 3} & R_{N}^{0}\end{bmatrix}J(q)\dot{q}\tag{9}$$
