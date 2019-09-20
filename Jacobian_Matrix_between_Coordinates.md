@@ -28,7 +28,7 @@ The corresponding velocy is
 
 $$\dot{p^{B}}=\dot{R_{A}^{B}}p^{A} + \dot{t_{A}^{B}} = S(\omega_{A}^{B})R_{A}^{B}p^{A} + v_{A}^{B} = \omega_{A}^{B} \times p^{B} + v_{A}^{B}\tag{4}$$
 
-where $v_{A}^{B}$ is the velocity of translation derivative $\dot{t_{A}^{B}}$.
+where $v_{A}^{B}$ is the velocity of translation derivative term $\dot{t_{A}^{B}}$.
 
 Since, $\omega_{A}^{B} \times p^{B} = - p^{B} \times \omega_{A}^{B} = -S(p^{B})\omega_{A}^{B}$. Thus,
 
