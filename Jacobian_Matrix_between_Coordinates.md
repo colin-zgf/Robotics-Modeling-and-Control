@@ -40,7 +40,7 @@ $$S(p^{A}) = S((R_{A}^{B})^{T}p^{B}) = (R_{A}^{B})^{T}S(p^{B})R_{A}^{B}\tag{6}$$
 
 Based on this,
 
-$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})(R_{A}^{B})^{T}\omega_{A}^{B} + R_{A}^{B}v_{A}\tag{7}$$
+$$\dot{p^{B}}=-R_{A}^{B}S(p^{A})(R_{A}^{B})^{T}\omega_{A}^{B} + R_{A}^{B}v^{A}\tag{7}$$
 
 $$\dot{p^{B}}=-R_{A}^{B}S(p^{A})R_{B}^{A}\omega_{A}^{B} + R_{A}^{B}v_{A}\tag{8}$$
 
