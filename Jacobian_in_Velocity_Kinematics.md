@@ -16,8 +16,28 @@ Basically, there are two ways for the Jacobian matrix representation. Here only 
 
 The $i$th column of $J_{v_{i}}$ is
 
-$$f(x)=
+$$J_{v_{i}}=
 \begin{cases}
 z_{i-1} \times (o_{n} - o_{i-1})& \text{for revolute joint i}\\\ 
 z_{i-1}& \text{for prismatic joint i}
 \end{cases}\tag{2}$$
+
+The $i$th column of $J_{\omega_{i}}$ is
+
+$$J_{\omega_{i}}=
+\begin{cases}
+z_{i-1}& \text{for revolute joint i}\\\ 
+0& \text{for prismatic joint i}
+\end{cases}\tag{3}$$
+
+So if $$J=(J_{1}, J_{2},...,J_{n})$$, then the $i$th column of $J_{i}$ for revolute joint is given by
+
+$$J_{i}=
+\begin{cases}
+z_{i-1} \times (o_{n} - o_{i-1})\\\ z_{i-1}\end{cases}\tag{4}$$
+
+and the $i$th column of $J_{i}$ for prismatic joint is given by
+
+$$J_{\omega_{i}}=
+\begin{cases}
+z_{i-1}\\\ 0\end{cases}\tag{5}$$
