@@ -1,4 +1,4 @@
-# Robotics-Modeling-and-Control
+# Robotics Modeling and Control
 
 ## Contact Info
 If you have any questions, please leave a message or send the email to 
