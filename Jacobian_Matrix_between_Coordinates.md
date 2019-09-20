@@ -26,4 +26,4 @@ $$p^{B}=R_{A}^{B}p^{A} + t_{B}^{A}\tag{3}$$
 
 The corresponding velocy is
 
-$$\dot{p^{B}}=\dot{R_{A}^{B}}p^{A} + \dot{t_{B}^{A}}\tag{4}$$
+$$\dot{p^{B}}=\dot{R_{A}^{B}}p^{A} + \dot{t_{B}^{A}} = S(\omega_{A}^{B})R_{A}^{B}p^{A} = \omega_{A}^{B} \times p^{A} + v_{A}^{B}\tag{4}$$
