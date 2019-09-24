@@ -16,4 +16,4 @@ $\tau$--torque
 
 It is well known that 
 
-$$\omega_{0} = R\omega\tag{1}$$
+$$\omega_{0} = R\omega, \quad \omega=R^{T}\omega_{0}\tag{1}$$
