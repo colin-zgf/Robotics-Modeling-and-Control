@@ -41,3 +41,12 @@ $$R^{T}\dot{h} = R^{T}S(\omega_{0})RI\omega + I\dot{\omega} \\\
                 = S(\omega)I\omega + I\dot{\omega} \\\
                 = \omega \times (I\omega) + I\dot{\omega} \\\
                 = \tau\tag{6}$$
+
+
+$$
+\begin{align}
+3+x &=4 && \text{(Solve for} x \text{.)}\\
+x &=4-3 && \text{(Subtract 3 from both sides.)}\\
+x &=1 && \text{(Yielding the solution.)}
+\end{align}
+$$
