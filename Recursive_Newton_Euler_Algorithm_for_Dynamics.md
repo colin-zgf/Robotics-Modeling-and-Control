@@ -36,8 +36,8 @@ $$\dot{h} = S(\omega_{0})RI\omega + RI\dot{\omega}\tag{5}$$
 
 With respect to the frame rigidly attached to the body, the rate of change of the angular momentum is
 
-$$\begin{align}R^{T}\dot{h} = R^{T}S(\omega_{0})RI\omega + I\dot{\omega}
-                            = S(R^{T}\omega_{0})I\omega + I\dot{\omega}
-                            = S(\omega)I\omega + I\dot{\omega}
-                            = \omega \times (I\omega) + I\dot{\omega}
-                            = \tau\end{align}\tag{6}$$
+$$\begin{align}R^{T}\dot{h} &= R^{T}S(\omega_{0})RI\omega + I\dot{\omega}
+                            &= S(R^{T}\omega_{0})I\omega + I\dot{\omega}
+                            &= S(\omega)I\omega + I\dot{\omega}
+                            &= \omega \times (I\omega) + I\dot{\omega}
+                            &= \tau\end{align}\tag{6}$$
