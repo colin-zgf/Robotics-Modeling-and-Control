@@ -17,3 +17,11 @@ $\tau$--torque
 It is well known that 
 
 $$\omega_{0} = R\omega, \quad \omega=R^{T}\omega_{0}\tag{1}$$
+
+Hence, the angular momentum, expressed in the inertial frame, is
+
+$$h = RIR^{T}R\omega=RI\omega\tag{2}$$
+
+Differentiating the formula above given $I$ is constant leads to
+
+$$\dot{h} = \dot{R}I\omega + RI\dot{\omega}\tag{3}$$
