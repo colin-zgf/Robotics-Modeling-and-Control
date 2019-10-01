@@ -41,3 +41,33 @@ $$R^{T}\dot{h} = R^{T}S(\omega_{0})RI\omega + I\dot{\omega}
                = S(\omega)I\omega + I\dot{\omega} 
                = \omega \times (I\omega) + I\dot{\omega} 
                = \tau\tag{6}$$
+
+## Recursive Newton-Eulear
+
+The corresponding teminologies are defined as below:
+
+$a_{c,i}$--the acceleration of the center of mass of link $i$
+
+$a_{e,i}$--the acceleration of the end of of link $i$ (i.e. joint $i$ + 1
+
+$\omega_{i}$-- the angular velocity of frame $i$ w.r.t. frame 0
+
+$\alpha_{i}$--the angular acceleration of frame $i$ w.r.t. frame 0
+
+$g_{i}$--the acceleration due to gravity expressed in frame $i$
+
+$f_{i}$--the force exerted by link $i$-1 on link $i$
+
+$\tau_{i}$--the torque exerted by link $i$-1 on link $i$
+
+$R_{i}^{i+1}$--the rotation matrix from frame $i$ + 1 to frame $i$
+
+$m_{i}$-- the mass of link $i$
+
+$I_{i}$--the inertia matrix of link $i$ about a frame parallel to frame $i$ whose origin is at the center of masss of link $i$
+
+$r_{i,ci}$-- the vector from joint $i$ to the center of mass of link $i$
+
+$r_{i+1, ci}$-- the vector from joint $i$+1 to the center of mass of link $i$
+
+$r_{i,i+1}$-- the vector from joint $i$ to joint $i$ + 1
