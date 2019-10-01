@@ -79,3 +79,15 @@ $$f_{i}-R_{i}^{i+1}f_{i+1}+m_{i}g_{i} = m_{i}a_{c,i}\tag{7}$$
 The momentum balance equation for link $i$ gives:
 
 $$\tau_{i}-R_{i}^{i+1}\tau_{i+1} + f_{i} \times r_{i,ci}-(R_{i}^{i+1}f_{i+1})\times r_{i+1, ci} = I_{i}\alpha_{i} + \omega_{i} \times (I_{i}\omega_{i})\tag{8}$$
+
+Rearrange force and momentum balance equations, we get
+
+$$f_{i} = R_{i}^{i+1}f_{i+1} + m_{i}a_{c,i} -m_{i}g_{i}\tag{9}$$
+
+$$\tau_{i} = R_{i}^{i+1}\tau_{i+1} - f_{i} \times r_{i,ci} + (R_{i}^{i+1}f_{i+1})\times r_{i+1, ci} + I_{i}\alpha_{i} + \omega_{i} \times (I_{i}\omega_{i})\tag{10}$$
+
+**The important term to explain and calculated is the angular velocity term $\omega$**.
+
+We have the relationship
+
+$$\omega_{i}^{0} = \omega_{i-1}^{0} + z_{i-1}\dot{q_{i}}\tag{11}$$
