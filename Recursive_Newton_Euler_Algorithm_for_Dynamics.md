@@ -78,4 +78,4 @@ $$f_{i}-R_{i}^{i+1}f_{i+1}+m_{i}g_{i} = m_{i}a_{c,i}\tag{7}$$
 
 The momentum balance equation for link $i$ gives:
 
-$$\tau_{i}-R_{i}^{i+1}\tau_{i+1} + f_{i} \ times r_{i,ci}-(R_{i}^{i+1}f_{i+1})\times r_{i+1, ci} = I_{i}\alpha_{i} + \omega_{i} \ times (I_{i}\omega_{i})\tag{8}$$
+$$\tau_{i}-R_{i}^{i+1}\tau_{i+1} + f_{i} \times r_{i,ci}-(R_{i}^{i+1}f_{i+1})\times r_{i+1, ci} = I_{i}\alpha_{i} + \omega_{i} \times (I_{i}\omega_{i})\tag{8}$$
