@@ -90,4 +90,14 @@ $$\tau_{i} = R_{i}^{i+1}\tau_{i+1} - f_{i} \times r_{i,ci} + (R_{i}^{i+1}f_{i+1}
 
 We have the relationship
 
-$$\omega_{i}^{0} = \omega_{i-1}^{0} + z_{i-1}\dot{q_{i}}\tag{11}$$
+$$\omega_{i}^{0} = \omega_{i-1}^{0} + z_{i-1}^{0}\dot{q_{i}} = (R_{i}^{i-1})^{T}\omega_{i-1} + b_{i}\dot{q_{i}}\tag{11}$$
+
+where
+
+$$b_{i} = (R_{i}^{0})^{T}z_{i-1}$$
+
+It is vitally important to note that
+
+$$\alpha_{i} = (R_{i}^{0})^{T}\dot{\omega_{i}^{0}}\tag{12}$$
+
+$$\dot{\omega_{i}^{0}} = \dot{\omega_{i-1}^{0}} + z_{i-1}\ddot{q_{i}} + \omega_{i-1}^{0} \times z_{i-1}\dot{q_{i}}\tag{13}$$
