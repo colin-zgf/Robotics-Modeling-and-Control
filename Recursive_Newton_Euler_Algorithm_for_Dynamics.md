@@ -101,3 +101,43 @@ It is vitally important to note that
 $$\alpha_{i} = (R_{i}^{0})^{T}\dot{\omega_{i}^{0}}\tag{12}$$
 
 $$\dot{\omega_{i}^{0}} = \dot{\omega_{i-1}^{0}} + z_{i-1}\ddot{q_{i}} + \omega_{i-1}^{0} \times z_{i-1}\dot{q_{i}}\tag{13}$$
+
+Expressing the same equation in frame $i$ gives:
+
+$$\alpha_{i} = (R_{i}^{i-1})^{T}\alpha_{i-1} + b_{i}\ddot{q_{i}} + \omega_{i}^{0} \times b_{i}\dot{q_{i}}\tag{14}$$
+
+The velocity of the center of mass of link $i$ is given by
+
+$$v_{c,i}^{0} = v_{e,i-1}^{0} + \omega_{i}^{0}\times r_{i,ci}^{0}\tag{15}$$
+
+Thus, the angular acceleration is shown below:
+
+$$a_{c,i}^{0} = a_{e,i-1}^{0} + \dot{\omega_{i}^{0}} \times r_{i,ci}^{0} + \omega_{i}^{0}\times (\omega_{i}^{0}\times  r_{i,ci}^{0})\tag{16}$$
+
+Based on the fact that
+
+$$a_{c,i} = (R_{i}^{0})^{T}a_{c,i}^{0}\tag{17}$$
+
+We also have to account for the fact that $a_{e,i-1}$ is expressed in frame $i$-1 and transform it to frame $i$, which gives
+
+$$a_{c,i} = (R_{i}^{i-1})^{T}a_{e,i-1} + \dot{\omega_{i}} \times r_{i,ci} + \omega_{i}\times (\omega_{i}\times r_{i,ci})\tag{18}$$
+
+and
+
+$$a_{e,i} = (R_{i}^{i-1})^{T}a_{e,i-1} + \dot{\omega_{i}} \times r_{i,i+1} + \omega_{i}\times (\omega_{i}\times r_{i,i+1})\tag{19}$$
+
+Now the recursive formulation is complete. We can now state the Newton-Euler formulation as follows:
+
+a. Start with the initial conditions
+
+$$\omega_{0} = 0; \alpha_{0}=0; a_{c, 0}=0; a_{e,0}=0$$
+
+and solve Eqn.(11), (12), (19) and (18) (in that order) to compute $\omega_{i}, \alpha_{i}$ and $a_{c,i}$ for $i$ increasing from 1 to $n$.
+
+b. Start with the terminal conditions:
+
+$$f_{n+1}=0; \tau_{n+1}=0$$
+
+and use Eqn.(9) and (10) to compute $f_{i}$ and $\tau_{i}$ for $i$ decreasing from $n$ to 1.
+
+**The key of the whole algorithm is to solve $f_{i}$, $\tau_{i}$ and $a_{e,i}$.**
