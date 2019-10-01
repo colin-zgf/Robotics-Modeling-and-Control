@@ -72,3 +72,10 @@ $r_{i+1, ci}$-- the vector from joint $i$+1 to the center of mass of link $i$
 
 $r_{i,i+1}$-- the vector from joint $i$ to joint $i$ + 1
 
+The force balance equation for link $i$ gives:
+
+$$\beginf_{i}-R_{i}^{i+1}f_{i+1}+m_{i}g_{i} = m_{i}a_{c,i}\end\tag{7}$$
+
+The momentum balance equation for link $i$ gives:
+
+$$\begin\tau_{i}-R_{i}^{i+1}\tau_{i+1} + f_{i} \ times r_{i,ci}-(R_{i}^{i+1}f_{i+1})\times r_{i+1, ci} = I_{i}\alpha_{i} + \omega_{i} \ times (I_{i}\omega_{i})\end\tag{8}$$
