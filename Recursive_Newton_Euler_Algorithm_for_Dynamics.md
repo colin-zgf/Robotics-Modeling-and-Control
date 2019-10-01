@@ -71,3 +71,4 @@ $r_{i,ci}$-- the vector from joint $i$ to the center of mass of link $i$
 $r_{i+1, ci}$-- the vector from joint $i$+1 to the center of mass of link $i$
 
 $r_{i,i+1}$-- the vector from joint $i$ to joint $i$ + 1
+
