@@ -27,9 +27,17 @@ The following are included:
 
 ## Codes
 
+- [Transformation Matrix](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/transformationMatrix.m)
+- [Transition Matrix](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/transitionMatrix.m)
+- [Singularity in Robots](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/Singularity.m)
+- [Inverse Kinematics](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/test_inverse_kinematics.m)
+- [Jacobian Matrix from Paper](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/test_jacobe.m)
+- [Differential Motion](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/test_tr2delta.m)
 - [One-Leg Motion](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/SImpleWalkingRobot.m)
 - [Four-Leg Motion](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/MotionOfFourLegs.m)
-- [Jacobian matrix calculation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/jacobian_matrix.m)
+- [Jacobian Matrix Calculation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/jacobian_matrix.m)
+- [Dynamic Picture Generation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/tool_dynamic_gif.m)
+- [Video Generation](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/code/tool_generate_video.m)
 
 ## Reference
 - [Robotics Vision and Control Fundamental Algorithms in Matlab](https://github.com/ErlangZ/Ebooks/blob/master/Robotics%2C%20vision%20and%20control%20fundamental%20algorithms%20in%20MATLAB%26amp%3Breg%3B.pdf)
