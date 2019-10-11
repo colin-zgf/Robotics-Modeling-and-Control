@@ -1,7 +1,7 @@
 # Robotics Modeling and Control
 
-![](img src="img/one_leg_motion.gif" height="180px" width="250px"/)
-![](img src="img/2_four_legs_motion.gif" height="180px" width="250px"/)
+<img src="img/one_leg_motion.gif" height="180px" width="250px"/>
+<img src="img/2_four_legs_motion.gif" height="180px" width="250px"/>
 
 ## Contact Info
 If you have any questions, please leave a message or send the email to 
