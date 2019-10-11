@@ -1,7 +1,7 @@
 # Robotics Modeling and Control
 
-![](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/one_leg_motion.gif)
-![](https://github.com/colin-zgf/Robotics-Modeling-and-Control/blob/master/image/2_four_legs_motion.gif)
+![](image/one_leg_motion.gif) | <img src="img/one_leg_motion.gif" height="180px" width="250px"/>
+![](image/2_four_legs_motion.gif) | <img src="img/2_four_legs_motion.gif" height="180px" width="250px"/>
 
 ## Contact Info
 If you have any questions, please leave a message or send the email to 
