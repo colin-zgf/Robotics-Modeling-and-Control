@@ -1,7 +1,11 @@
 # Robotics Modeling and Control
 
-| one-leg |<img src="img/one_leg_motion.gif" height="180px" width="250px"/> | 
-| four-legs |<img src="img/2_four_legs_motion.gif" height="180px" width="250px"/> |
+<table>
+  <tr>
+    <td><img src="img/one_leg_motion.gif?raw=true" height="180px" width="250px"/></td>
+    <td><img src="img/2_four_legs_motion.gif?raw=true" height="180px" width="250px"/></td>
+  </tr>
+</table>
 
 ## Contact Info
 If you have any questions, please leave a message or send the email to 
