@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <td><img src="img/one_leg_motion.gif?raw=true" height="180px" width="250px"/></td>
-    <td><img src="img/2_four_legs_motion.gif?raw=true" height="180px" width="250px"/></td>
+    <td><img src="img/one_leg_motion.gif?raw=true" height="180px" width="250px"></td>
+    <td><img src="img/2_four_legs_motion.gif?raw=true" height="180px" width="250px"></td>
   </tr>
 </table>
 
