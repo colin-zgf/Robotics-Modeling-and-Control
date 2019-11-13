@@ -48,7 +48,7 @@ If we define $U_{j} = (A_{j} * A_{j+1} * ... * A_{N})$ with elements:
 
 $$U_{j} = \begin{pmatrix}n_{x} & o_{x} & a_{x} & p_{x} \\\ n_{y} & o_{y} & a_{y} & p_{y} \\\ n_{z} & o_{z} & a_{z} & p_{z} \\\  0 & 0 & 0 & 1\end{pmatrix}\tag{6}$$
 
-Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the form bewlow where $N$ is the number of joint:
+Therefore, the Jacobian Matrix $J_{6\times N}$ consists of $N$ columns of the form below where $N$ is the number of joint:
 
 For revolute, the jth column is the form of:
 
